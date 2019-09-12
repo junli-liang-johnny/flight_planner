@@ -1,0 +1,22 @@
+{
+  "name": "flight_planner",
+  "version": "1.0.0",
+  "description": "flight planner report system built on the top of rdforms",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "junli.liang4@mail.dcu.ie",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap-material-datetimepicker": "^2.7.3",
+    "bootstrap-material-design": "^4.1.2",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.1.2",
+    "moment": "^2.24.0",
+    "n3": "^1.1.1",
+    "rdfjson": "https://bitbucket.org/metasolutions/rdfjson.git#2.1",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,102 @@
+<div class="container mt-4" id="blocker-report-container">
+  <form id="blocker-report-form-container">
+    <!-- 1st row -->
+    <div class="row justify-content-md-center">
+      <div class="col-lg-8">
+        <p class="lead text-secondary">Please Fill in the Blocker Report Form</p>
+        <div class="card">
+          <div class="card-header">
+            Report Details
+          </div>
+          <div class="card-body">
+            <!-- report title -->
+            <div class="form-group">
+              <label class="bmd-label-floating" for="blocker-title">Report Title</label>
+              <input type="text" class="form-control" id="blocker-title" name="blocker-title" required />
+            </div>
+            <!-- creator -->
+            <div class="form-group input-group">
+              <label class="bmd-label-placeholder" for="blocker-creator">Creator: the one creates this report</label>
+              <input type="text" class="form-control" id="blocker-creator" name="blocker-creator" required />
+            </div>
+            <!-- flight Number -->
+            <div class="form-group input-group">
+              <label class="bmd-label-floating" for="call-sign">Flight Number</label>
+              <select class="form-control" id="call-sign" name="call-sign" required />
+              {{#each callSign}}
+                <option value="{{{this.callSign.value}}}">{{{this.callSign.value}}}</option>
+              {{/each}}
+              </select>
+            </div>
+            <!-- flight actual date  -->
+            <div class="form-group input-group">
+              <label for="arrival-day">Flight Arrival Date</label>
+              <input type="date" class="form-control datetimepicker" id="arrival-day" name="arrival-day" required/>
+            </div>
+            <!-- flight arrival time -->
+            <!-- <div class="form-group input-group">
+              <label for="filght-arrival-time">Flight Arrival Time</label>
+              <input type="time" class="form-control" id="flight-arrival-time" name="flight-arrival-time" />
+            </div> -->
+            <!-- flight departure date  -->
+            <div class="form-group input-group">
+              <label for="departure-day">Flight Departure Date</label>
+              <input type="date" class="form-control datetimepicker" id="departure-day" name="flight-departure-day" required/>
+            </div>
+            <!-- flight departure time -->
+            <!-- <div class="form-group input-group">
+              <label for="filght-departure-time">Flight Departure Time</label>
+              <input type="time" class="form-control" id="flight-departure-time" name="flight-depature-time" />
+            </div> -->
+            <!-- arrival airport name -->
+            <div class="form-group input-group">
+              <label class="bmd-label-floating" for="arrival-airport-name">Arrival Airport Name</label>
+              <select class="form-control" id="arrival-airport-name" name="arrival-airport-name" required />
+              {{#each airportName}}
+                <option value="{{{this.airportName.value}}}">{{{this.airportName.value}}}</option>
+                {{/each}}
+              </select>
+            </div>
+            <!-- departure arrival name -->
+            <div class="form-group input-group">
+              <label class="bmd-label-floating" for="departure-airport-name">Departure Airport Name</label>
+              <select class="form-control" id="departure-airport-name" name="departure-airport-name" required />
+              {{#each airportName}}
+                <option value="{{{this.airportName.value}}}">{{{this.airportName.value}}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2nd row -->
+    <div class="row justify-content-md-center mt-4">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-header">
+            Problem Section
+          </div>
+          <div class="card-body">
+            <!-- description -->
+            <div class="form-group input-group">
+              <label class="bmd-label-floating" for="blocker-description">Problems</label>
+              <textarea aria-label="Large" class="form-control" id="blocker-description" name="blocker-description" row="4" aria-label="With textarea" required></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-md-center mt-4">
+      <div class="col-lg-8">
+        <button id="blocker-report-submit-btn" class="btn btn-raised btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script type="module" src="index/public/js/blocker-report-form.js"></script>

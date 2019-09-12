@@ -1,0 +1,27 @@
+{
+   "label":{"en":"Bibliography", "sv":"Bibliografi"},
+   "description":{"en":"Some nice information about books", "sv":"Lite trevlig bokinformation"},
+   "root": "book",
+   "templates":[
+        {
+           "id":"publisheddate",
+           "type":"text",
+           "label":{"en":"Published"},
+           "description":{"en":"The date this book was first published"},
+           "nodetype":"DATATYPE_LITERAL",
+           "datatype":"http://www.w3.org/2001/XMLSchema.xsd#date",
+           "property":"http://purl.org/dc/terms/date",
+           "cardinality": {"pref": 1, "max": 1}
+       }, {
+           "type":"group",
+           "id":"book",
+           "label":{"en":"Book"},
+           "constraints":{"http://www.w3.org/TR/rdf-schema/type":"http://xmlns.com/foaf/0.1/Document"},
+           "nodetype":"RESOURCE",
+           "items":[
+               "publisheddate"
+           ]
+       }
+   ],
+   "cachedChoices": {}
+}

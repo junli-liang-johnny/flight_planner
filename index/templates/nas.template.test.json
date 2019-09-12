@@ -1,0 +1,1444 @@
+{
+  "root": "nas",
+  "label": {
+    "en": "NAS schema"
+  },
+  "description": {
+    "en": "This is NASA ATM schema"
+  },
+  "templates": [{
+    "id": "nas:ARTCC",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC",
+    "type": "text",
+    "nodetype": "URI",
+    "label": {
+      "en": "ARTCC"
+    }
+  }, {
+    "id": "nas:ARTCCtier",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCCtier",
+    "type": "text",
+    "description": {
+      "en": "A donut-shaped geographical area surrounding a designated central ARTCC. The first tier includes all the ARTCCs that share a boundary with the designated  ARTCC. The tier two ARTCCs includes the first tier ARTCCs plus those adjacent to the first tier ARCCCs. And so on."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "ARTCCtier"
+    }
+  }, {
+    "id": "nas:ATCSCC",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#ATCSCC",
+    "type": "text",
+    "description": {
+      "en": "Air Traffic Control System Command Center (ATCSCC) facility"
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "ATCSCC"
+    }
+  }, {
+    "id": "nas:ATCT",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#ATCT",
+    "type": "text",
+    "description": {
+      "en": "Air Traffic Control Tower (ATCT) facility"
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "ATCT"
+    }
+  }, {
+    "id": "nas:AirCarrier",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier",
+    "type": "text",
+    "description": {
+      "en": "An entity that it licensed to operate aircraft."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Air carrier"
+    }
+  }, {
+    "id": "nas:AircraftEngineManufacturer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AircraftEngineManufacturer",
+    "type": "text",
+    "description": {
+      "en": "A manufacturer of aircraft engines."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Aircraft engine manufacturer"
+    }
+  }, {
+    "id": "nas:AirframeManufacturer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer",
+    "type": "text",
+    "description": {
+      "en": "A manufacturer of physical aircraft."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airframe manufacturer"
+    }
+  }, {
+    "id": "nas:Airport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport",
+    "type": "text",
+    "description": {
+      "en": "A facility where regularly-scheduled aircraft arrive and depart."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airport"
+    }
+  }, {
+    "id": "nas:AirportInfrastructureComponent",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent",
+    "type": "text",
+    "description": {
+      "en": "Part of an airport's physical infrastructure, including gates, terminals, runways, taxiways, etc."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airport infrastructure component"
+    }
+  }, {
+    "id": "nas:AirportRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportRoute",
+    "type": "text",
+    "description": {
+      "en": "A route within a SID or STAR that connects the common route to one of multiple airports that use the SID/STAR."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airport route"
+    }
+  }, {
+    "id": "nas:AirportServiceVehicle",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportServiceVehicle",
+    "type": "text",
+    "description": {
+      "en": "A class of vehicles that service the flights and maintain the airport physical infrastructure."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airport service vehicle"
+    }
+  }, {
+    "id": "nas:AirspaceInfrastructureComponent",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent",
+    "type": "text",
+    "description": {
+      "en": "A defined substructure of the airspace used to manage air traffic, including sectors, SIDs, STARs, routes, etc."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airspace infrastructure component"
+    }
+  }, {
+    "id": "nas:AirspaceLayer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceLayer",
+    "type": "text",
+    "description": {
+      "en": "Represents a layer within the airspace, defined by a shear-sided polygon with specified low and high altitudes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airspace layer"
+    }
+  }, {
+    "id": "nas:AirspaceRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceRoute",
+    "type": "text",
+    "description": {
+      "en": "An ordered sequence of navigation elements specifying a path through the airspace."
+    },
+    "nodetype": "URI"
+  }, {
+    "id": "nas:AviationIndustryManufacturer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AviationIndustryManufacturer",
+    "type": "text",
+    "description": {
+      "en": "A superclass encompassing the set of airframe and engine manufacturers."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Aviation industry manufacturer"
+    }
+  }, {
+    "id": "nas:AviationServiceProvider",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#AviationServiceProvider",
+    "type": "text",
+    "description": {
+      "en": "A superclass encompassing all entities that provide aviation services in the public and private sectors."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Aviation service provider"
+    }
+  }, {
+    "id": "nas:CONUSairport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#CONUSairport",
+    "type": "text",
+    "description": {
+      "en": "The set of airports in the continental US."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Continental US airport"
+    }
+  }, {
+    "id": "nas:CanadianAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#CanadianAirport",
+    "type": "text",
+    "description": {
+      "en": "The set of Canadian airports."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Canadian airport"
+    }
+  }, {
+    "id": "nas:CommonRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#CommonRoute",
+    "type": "text",
+    "description": {
+      "en": "The backbone portion of a SID or STAR that is flown by all aircraft."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Common route"
+    }
+  }, {
+    "id": "nas:DeicingPad",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#DeicingPad",
+    "type": "text",
+    "description": {
+      "en": "A physical location in the airport where deicing is performed."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Deicing pad"
+    }
+  }, {
+    "id": "nas:DeicingQueue",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#DeicingQueue",
+    "type": "text",
+    "description": {
+      "en": "An ordered sequence of aircraft awaiting deicing at a deicing pad."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Deicing queue"
+    }
+  }, {
+    "id": "nas:DeicingTruck",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#DeicingTruck",
+    "type": "text",
+    "description": {
+      "en": "A vehicle that holds deicing fluid and pumping equipment to support deicing."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Deicing truck"
+    }
+  }, {
+    "id": "nas:FederalAirway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#FederalAirway",
+    "type": "text",
+    "description": {
+      "en": "An airspace route that is defined by FAA and can be filed as part of a flight plan: a jet route, a Q-route,  a T-Route, a Victor route."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Federal airway"
+    }
+  }, {
+    "id": "nas:Gate",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#Gate",
+    "type": "text",
+    "description": {
+      "en": "A physical interface between the aircraft and the terminal, used to board passengers and crew."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Gate"
+    }
+  }, {
+    "id": "nas:GovernmentAviationServiceProvider",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#GovernmentAviationServiceProvider",
+    "type": "text",
+    "description": {
+      "en": "The set of govenment agencies that perform aviation services."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Government aviation service provider"
+    }
+  }, {
+    "id": "nas:InternationalAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#InternationalAirport",
+    "type": "text",
+    "description": {
+      "en": "The set of international (i.e., non-US) airports."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "International airport"
+    }
+  }, {
+    "id": "nas:JetRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#JetRoute",
+    "type": "text",
+    "description": {
+      "en": "A high altitude airway based on ground-based VOR sensor locations."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Jet route"
+    }
+  }, {
+    "id": "nas:NASday",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#NASday",
+    "type": "text",
+    "description": {
+      "en": "A class that represents a day of the year. Events, such as flights, weather forecasts, and other events are linked to the instance of the day they occurred."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "NAS day"
+    }
+  }, {
+    "id": "nas:NASfacility",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility",
+    "type": "text",
+    "description": {
+      "en": "The set of FAA and airport facilities involved in operational air traffic management."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "NAS facility"
+    }
+  }, {
+    "id": "nas:NAShour",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#NAShour",
+    "type": "text",
+    "description": {
+      "en": "A class that represents an hour within a day. Events, such as flights, weather forecasts, and other events are linked to the instance of the day they occurred."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "NAShour"
+    }
+  }, {
+    "id": "nas:NonCONUSairport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#NonCONUSairport",
+    "type": "text",
+    "description": {
+      "en": "The set of airports located in the United States, but outside the contiguous lower 48 states."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Non CONUS airport"
+    }
+  }, {
+    "id": "nas:OperationalRunway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#OperationalRunway",
+    "type": "text",
+    "description": {
+      "en": "An operational runway is a named runway one used in airport operations. There are two operational runways corresponding to one physical runway; these operational runways are 180 degrees apart."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Operational runway"
+    }
+  }, {
+    "id": "nas:PhysicalRunway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway",
+    "type": "text",
+    "description": {
+      "en": "A physical runway, defined as a delimited rectangular surface region of the airport. Each physical runway is associated with two operational runways, 180 degrees apart."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Physical Runway"
+    }
+  }, {
+    "id": "nas:QRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#QRoute",
+    "type": "text",
+    "description": {
+      "en": "A high altitude RNAV airway route. (RNAV routes allow an aircraft to choose any course within a network of navigation beacons, rather than navigate directly to and from the beacons.)"
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Q-Route"
+    }
+  }, {
+    "id": "nas:RNAVroute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#RNAVroute",
+    "type": "text",
+    "description": {
+      "en": "An RNAV (Random Navigation) route is defined relative to a network of existing ground-based navigation beacons.  RNAV allows an aircraft to choose any course within the network, rather than navigate using only point-to-point routes defined by the beacons."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "RNAV route"
+    }
+  }, {
+    "id": "nas:RadialRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#RadialRoute",
+    "type": "text",
+    "description": {
+      "en": "A route that follows a specified radial path emanating from a given fix."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Radial Route"
+    }
+  }, {
+    "id": "nas:RampTower",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#RampTower",
+    "type": "text",
+    "description": {
+      "en": "A control tower from which ramp controllers guide aircraft movements as they enter and exit the taxiways, and arrive and leave the gates. The ramp is the area of the airport surface where planes, service vehicles, and people meet."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Ramp tower"
+    }
+  }, {
+    "id": "nas:RefuelingTruck",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#RefuelingTruck",
+    "type": "text",
+    "description": {
+      "en": "Vechicle that transports and pumps jet fuel to refuel aircraft."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Refueling truck"
+    }
+  }, {
+    "id": "nas:RunwayVisibleRangeMeasurement",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#RunwayVisibleRangeMeasurement",
+    "type": "text",
+    "description": {
+      "en": "A measurement of the distance over which a pilot of an aircraft on the centerline of a runway can see the runway surface markings delineating the runway and its centerline. RVR (Runway Visible Range) is expressed as an interval specifying the minimum and maximum number of feet visible."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "RVR measurement"
+    }
+  }, {
+    "id": "nas:SID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#SID",
+    "type": "text",
+    "description": {
+      "en": "A SID (Standard Instrument Departure) is an air traffic control coded departure procedure that has been established at certain airports to simplify clearance delivery procedures."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Standard Instrument Departure"
+    }
+  }, {
+    "id": "nas:SIDSTAR",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR",
+    "type": "text",
+    "description": {
+      "en": "A superclass of SID and STAR defining the properties shared by both, specifically the set of common, airport, and transition routes that comprise the SID/STAR."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "SIDSTAR"
+    }
+  }, {
+    "id": "nas:SIDSTARroute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTARroute",
+    "type": "text",
+    "description": {
+      "en": "A route that defines a SID or STAR."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "SIDSTARroute"
+    }
+  }, {
+    "id": "nas:STAR",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#STAR",
+    "type": "text",
+    "description": {
+      "en": "A STAR (Standard Terminal Arrival Route) is an air traffic control coded arrival route established for application to arriving IFR (Instrument Flight Rules) aircraft destined for certain airports."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Standard Arrival Route"
+    }
+  }, {
+    "id": "nas:Sector",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector",
+    "type": "text",
+    "description": {
+      "en": "A defined volume in the the airspace of an ARTCC or TRACON whose flight traffic is typically controlled by a single controller."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Sector"
+    }
+  }, {
+    "id": "nas:StandAloneWeatherStation",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#StandAloneWeatherStation",
+    "type": "text",
+    "description": {
+      "en": "A non-airport location where operational weather monitoring hardware is installed."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Stand-alone weather station"
+    }
+  }, {
+    "id": "nas:TRACON",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#TRACON",
+    "type": "text",
+    "description": {
+      "en": "Terminal Radar Approach Control (TRACON) facility"
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "TRACON"
+    }
+  }, {
+    "id": "nas:TRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#TRoute",
+    "type": "text",
+    "description": {
+      "en": "A low altitude RNAV airway route. (RNAV routes allow an aircraft to choose any course within a network of navigation beacons, rather than navigate directly to and from the beacons.)"
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "T-Route"
+    }
+  }, {
+    "id": "nas:Taxiway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#Taxiway",
+    "type": "text",
+    "description": {
+      "en": "An airport surface leading that connects the ramp area (i.e., the area in the vicinity of the gates) with the runways."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Taxiway"
+    }
+  }, {
+    "id": "nas:Terminal",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#Terminal",
+    "type": "text",
+    "description": {
+      "en": "A structure on the airport surface that serves as an interface between people, baggage, and aircraft."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Terminal"
+    }
+  }, {
+    "id": "nas:TransitionRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#TransitionRoute",
+    "type": "text",
+    "description": {
+      "en": "A route within a SID or STAR that feeds aircraft into or out from the common route of the SID/STAR. In other words, the transition route is a feeder route from the en route segment of a flight into the heart of a STAR for arrival; or an exit route from a SID funneling flights to their appropriate initial jet routes for the en route segment of flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Transition route"
+    }
+  }, {
+    "id": "nas:USairport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#USairport",
+    "type": "text",
+    "description": {
+      "en": "The set of airports located in the United States."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "USairport"
+    }
+  }, {
+    "id": "nas:VORroute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#VORroute",
+    "type": "text",
+    "description": {
+      "en": "A VOR route is defined relative to a network of existing ground-based VOR navigation beacons. VOR routes consist of point-to-point segments, where the points are defined by the beacons. More modern RNAV routes allow any path within the network, not limited to VOR-to-VOR segments."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "VOR route"
+    }
+  }, {
+    "id": "nas:VictorRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#VictorRoute",
+    "type": "text",
+    "description": {
+      "en": "A low altitude airway based on ground-based VOR sensor locations."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Victor route"
+    }
+  }, {
+    "id": "nas:adjacentSector",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#adjacentSector",
+    "type": "text",
+    "description": {
+      "en": "Links a sector to an immediately adjacent sector that shares a boundary."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "adjacent sector"
+    }
+  }, {
+    "id": "nas:airCarrierAlias",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airCarrierAlias",
+    "type": "text",
+    "description": {
+      "en": "An alternative name for an air carrier."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "air carrier alias"
+    }
+  }, {
+    "id": "nas:airCarrierName",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airCarrierName",
+    "type": "text",
+    "description": {
+      "en": "The official name of an air carrier."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "Air carrier name"
+    }
+  }, {
+    "id": "nas:airlineCallsign",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airlineCallsign",
+    "type": "text",
+    "description": {
+      "en": "The radio call sign associated with an the air carrier. Used by pilots and controllers to identify aircraft over radio frequencies."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "airline callsign"
+    }
+  }, {
+    "id": "nas:airportBoundary",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airportBoundary",
+    "type": "text",
+    "description": {
+      "en": "Links an airport to a representation of its perimeter boundary."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "airport boundary"
+    }
+  }, {
+    "id": "nas:airportLocation",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airportLocation",
+    "type": "text",
+    "description": {
+      "en": "Links to a geographic point designated as the airport location."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "airport location"
+    }
+  }, {
+    "id": "nas:airportName",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airportName",
+    "type": "text",
+    "description": {
+      "en": "The official name of the airport."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "airport name"
+    }
+  }, {
+    "id": "nas:airspaceLayerHighAltitude",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airspaceLayerHighAltitude",
+    "type": "text",
+    "description": {
+      "en": "The upper altitude bound of an airspace layer."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "airspace layer high altitude"
+    }
+  }, {
+    "id": "nas:airspaceLayerLowAltitude",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airspaceLayerLowAltitude",
+    "type": "text",
+    "description": {
+      "en": "The lower altitude bound of an airspace layer."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "airspace layer low altitude"
+    }
+  }, {
+    "id": "nas:arrivalRouteAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#arrivalRouteAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the airport for which this route is destined."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "arrival route airport"
+    }
+  }, {
+    "id": "nas:artccID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#artccID",
+    "type": "text",
+    "description": {
+      "en": "The 3-letter ARTCC (Air Route Traffic Control Center) code."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "artcc ID"
+    }
+  }, {
+    "id": "nas:associatedAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#associatedAirport",
+    "type": "text",
+    "description": {
+      "en": "Associates some component of airport infrastructure (runway, terminal, tower, etc.) with its airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "associated airport"
+    }
+  }, {
+    "id": "nas:associatedOpRunway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#associatedOpRunway",
+    "type": "text",
+    "description": {
+      "en": "Associates a physical runway with its two operational runways (180 degrees apart, representing approaches from either end of the physical runway)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "associated operational runway"
+    }
+  }, {
+    "id": "nas:calendarMonth",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#calendarMonth",
+    "type": "text",
+    "description": {
+      "en": "The month number associated with a day class."
+    },
+    "nodetype": "LITERAL"
+  }, {
+    "id": "nas:calendarYear",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#calendarYear",
+    "type": "text",
+    "description": {
+      "en": "The calendar year associated with a day class."
+    },
+    "nodetype": "LITERAL"
+  }, {
+    "id": "nas:countryOfRegistry",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#countryOfRegistry",
+    "type": "text",
+    "description": {
+      "en": "The country name of the airline registration."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "country of registry"
+    }
+  }, {
+    "id": "nas:date",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#date",
+    "type": "text",
+    "description": {
+      "en": "The date corresponding to the day represented by the day class. The value of this property is a date datatype. In contrast, the class represents the day conceptually as an object."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "date"
+    }
+  }, {
+    "id": "nas:dayOfMonth",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#dayOfMonth",
+    "type": "text",
+    "description": {
+      "en": "The day number associated with a day class."
+    },
+    "nodetype": "LITERAL"
+  }, {
+    "id": "nas:deicingPadLocation",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#deicingPadLocation",
+    "type": "text",
+    "description": {
+      "en": "Links a deicing pad with its location as a two-dimensional bounding polygon."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "deicing pad location"
+    }
+  }, {
+    "id": "nas:departureRouteAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#departureRouteAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the airport from which this route is destined."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "departure route airport"
+    }
+  }, {
+    "id": "nas:faaAirportCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#faaAirportCode",
+    "type": "text",
+    "description": {
+      "en": "The alphanumeric FAA code of lenth 3 or 4 for the airport. Contrasted with the ICAO and IATA codes, which in general are different. Often the IATA and FAA codes are identical."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "FAA airport code"
+    }
+  }, {
+    "id": "nas:gateID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#gateID",
+    "type": "text",
+    "description": {
+      "en": "The gate identifier assigned by the airport authority."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "gate ID"
+    }
+  }, {
+    "id": "nas:hasAirportRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasAirportRoute",
+    "type": "text",
+    "description": {
+      "en": "Associates an airport route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has airport route"
+    }
+  }, {
+    "id": "nas:hasAirspaceLayerGeometry",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasAirspaceLayerGeometry",
+    "type": "text",
+    "description": {
+      "en": "Links an airspace layer with a polygon describing its location in 3-space. A sector is composed of a sequence of layers, each of which is represented as a shear-sided polygonal volume."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has airspace layer geometry"
+    }
+  }, {
+    "id": "nas:hasCenterGeometry",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasCenterGeometry",
+    "type": "text",
+    "description": {
+      "en": "Links an ARTCC to a 2-dimensional bounding polygon."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has center geometry"
+    }
+  }, {
+    "id": "nas:hasCommonRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasCommonRoute",
+    "type": "text",
+    "description": {
+      "en": "Associates a common route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has common route"
+    }
+  }, {
+    "id": "nas:hasGate",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasGate",
+    "type": "text",
+    "description": {
+      "en": "Associates an airport terminal with a aircraft gate located at that terminal."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has gate"
+    }
+  }, {
+    "id": "nas:hasLOAwith",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasLOAwith",
+    "type": "text",
+    "description": {
+      "en": "This property links a NAS facility to another NAS facility when there is a letter of agreement (LOA) in place between them."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has LOA with"
+    }
+  }, {
+    "id": "nas:hasQueue",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasQueue",
+    "type": "text",
+    "description": {
+      "en": "Links a deicing pad to its queue of aircraft waiting to be deiced."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has queue"
+    }
+  }, {
+    "id": "nas:hasRampTower",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasRampTower",
+    "type": "text",
+    "description": {
+      "en": "Associates an airport terminal with a ramp tower that controlls the aircraft and vehicle traffic in the vicinity of that terminal."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has ramp tower"
+    }
+  }, {
+    "id": "nas:hasRunway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasRunway",
+    "type": "text",
+    "description": {
+      "en": "Links an airport to a physical runway for that airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has runway"
+    }
+  }, {
+    "id": "nas:hasSID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasSID",
+    "type": "text",
+    "description": {
+      "en": "Associates an airport with the the SIDs designated to route aircraft from that airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has SID"
+    }
+  }, {
+    "id": "nas:hasSTAR",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasSTAR",
+    "type": "text",
+    "description": {
+      "en": "Associates an airport with the the STARs designated to route aircraft to that airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has STAR"
+    }
+  }, {
+    "id": "nas:hasSectorID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasSectorID",
+    "type": "text",
+    "description": {
+      "en": "A sector identifier that consists of the ARTCC identifier concatenated with a three-digit number. This identifier is in general different than the sector name."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "has sector ID"
+    }
+  }, {
+    "id": "nas:hasSectorLayer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasSectorLayer",
+    "type": "text",
+    "description": {
+      "en": "Links a sector to its vertically-stacked set of layers."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has sector layer"
+    }
+  }, {
+    "id": "nas:hasSectorName",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasSectorName",
+    "type": "text",
+    "description": {
+      "en": "An alphanumeric sector name that is in general different than the sector ID."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "has sector name"
+    }
+  }, {
+    "id": "nas:hasTRACONcity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONcity",
+    "type": "text",
+    "description": {
+      "en": "The city name where the TRACON command center is located."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "has TRACONcity"
+    }
+  }, {
+    "id": "nas:hasTRACONid",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONid",
+    "type": "text",
+    "description": {
+      "en": "The FAA alphanumeric code for the TRACON."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "has TRACON ID"
+    }
+  }, {
+    "id": "nas:hasTRACONlayer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONlayer",
+    "type": "text",
+    "description": {
+      "en": "A link between the TRACON and its geographic extent, represented as a single shear-sided polygonal volume."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has TRACON layer"
+    }
+  }, {
+    "id": "nas:hasTRACONname",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONname",
+    "type": "text",
+    "description": {
+      "en": "The common name for the TRACON."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "has TRACON name"
+    }
+  }, {
+    "id": "nas:hasTRACONstate",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONstate",
+    "type": "text",
+    "description": {
+      "en": "The name of the US state in which the TRACON command center is located."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "has TRACONstate"
+    }
+  }, {
+    "id": "nas:hasTRACONtype",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONtype",
+    "type": "text",
+    "description": {
+      "en": "The type of TRACON: Tower-colocated TRACON or standalone TRACON."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "has TRACONtype"
+    }
+  }, {
+    "id": "nas:hasTaxiway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTaxiway",
+    "type": "text",
+    "description": {
+      "en": "Links an airport to a taxiway for that airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has taxiway"
+    }
+  }, {
+    "id": "nas:hasTerminal",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTerminal",
+    "type": "text",
+    "description": {
+      "en": "Links an airport to a terminal for that airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has terminal"
+    }
+  }, {
+    "id": "nas:hasTier",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTier",
+    "type": "text",
+    "description": {
+      "en": "Asociates an ARTCC with the set of ARTCCs in its nth level tier.  Tier 1 includes the central ARTCC plus all ARTCCs immediately adjoining the central ARTCC; tier 2 includes tier 1 plus all adjacent ARTCCs two steps away from the central ARTCC. And so on."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has tier"
+    }
+  }, {
+    "id": "nas:hasTower",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTower",
+    "type": "text",
+    "description": {
+      "en": "Links an airport to an air traffic control tower for that airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has tower"
+    }
+  }, {
+    "id": "nas:hasTransitionRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTransitionRoute",
+    "type": "text",
+    "description": {
+      "en": "Associates a transition route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has transition route"
+    }
+  }, {
+    "id": "nas:hoursOffsetFromUTC",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#hoursOffsetFromUTC",
+    "type": "text",
+    "description": {
+      "en": "The number of hours that the airport is offset from the UTC timezone."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "hours offset from UTC"
+    }
+  }, {
+    "id": "nas:iataAirportCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#iataAirportCode",
+    "type": "text",
+    "description": {
+      "en": "The thre-letter IATA code assigned to the airport. Contrast with the ICAO and FAA airport codes."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "IATA Airport Code"
+    }
+  }, {
+    "id": "nas:iataCarrierCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#iataCarrierCode",
+    "type": "text",
+    "description": {
+      "en": "The two-letter IATA code assigned to the carrier."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "IATA Carrier Code"
+    }
+  }, {
+    "id": "nas:icaoAirportCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#icaoAirportCode",
+    "type": "text",
+    "description": {
+      "en": "The four-letter ICAO code assignied to the airport. Contrast with the IATA and FAA airport codes."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ICAO airport code"
+    }
+  }, {
+    "id": "nas:icaoCarrierCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#icaoCarrierCode",
+    "type": "text",
+    "description": {
+      "en": "The three-letter ICAO code assigned to the airline carrier."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ICAO Air Carrier Code"
+    }
+  }, {
+    "id": "nas:includesARTCC",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#includesARTCC",
+    "type": "text",
+    "description": {
+      "en": "A link between an ARTCC tier and the ARTCCs included in the tier."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "includes ARTCC"
+    }
+  }, {
+    "id": "nas:isInstrumentControlEligible",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#isInstrumentControlEligible",
+    "type": "text",
+    "description": {
+      "en": "Indicates whether this airport is capable of an instrument approach."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "is instrument control eligible"
+    }
+  }, {
+    "id": "nas:isWeatherReportingStation",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#isWeatherReportingStation",
+    "type": "text",
+    "description": {
+      "en": "Indicates whether this airport is a METAR weather reporting station."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "is weather reporting station"
+    }
+  }, {
+    "id": "nas:locatedInCenter",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#locatedInCenter",
+    "type": "text",
+    "description": {
+      "en": "Links a sector to the ARTCC in which the sector is located."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "located in Center"
+    }
+  }, {
+    "id": "nas:locatedInState",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#locatedInState",
+    "type": "text",
+    "description": {
+      "en": "The 2-letter US postal code for the state in which the airport is located."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "Located in State"
+    }
+  }, {
+    "id": "nas:manufacturerCountryName",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#manufacturerCountryName",
+    "type": "text",
+    "description": {
+      "en": "The country name where the manufacturer is established."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "manufacturer country name"
+    }
+  }, {
+    "id": "nas:manufacturerFullName",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#manufacturerFullName",
+    "type": "text",
+    "description": {
+      "en": "The full name of the manufacturer."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "manufacturer full name"
+    }
+  }, {
+    "id": "nas:maxVisibility",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#maxVisibility",
+    "type": "text",
+    "description": {
+      "en": "The upper bound of visibility in feet over the centerline of the runway."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "max visibility"
+    }
+  }, {
+    "id": "nas:minVisibility",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#minVisibility",
+    "type": "text",
+    "description": {
+      "en": "The lower bound of visibility in feet over the centerline of the runway."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "min visibility"
+    }
+  }, {
+    "id": "nas:routeID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#routeID",
+    "type": "text",
+    "description": {
+      "en": "FAA alphanumeric identifier assigned to the route/airway."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "route ID"
+    }
+  }, {
+    "id": "nas:runwayFootprint",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#runwayFootprint",
+    "type": "text",
+    "description": {
+      "en": "Associates a physical runway with its bounding two-dimensional rectangle."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "runway footprint"
+    }
+  }, {
+    "id": "nas:runwayID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#runwayID",
+    "type": "text",
+    "description": {
+      "en": "An identifier for the runway. For physical runways, the convention is to label runways by their heading, dropping the last digit. E.g. for Liverpool, runway 9/27 is facing approximately magnetic heading 90 degrees in one direction, and 270 degrees in the opposite direction. If an airport has parallel runways, these would then be marked Left, Center and Right, e.g. 9L, 9C, 9R. For operational runways, the runway identifiers specifies one direction only: either 9 or 27 in the Liverpool example."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "runway ID"
+    }
+  }, {
+    "id": "nas:runwayLengthInFeet",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#runwayLengthInFeet",
+    "type": "text",
+    "description": {
+      "en": "The length in feet of the physical runway."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "runway length in feet"
+    }
+  }, {
+    "id": "nas:runwayMeasured",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#runwayMeasured",
+    "type": "text",
+    "description": {
+      "en": "Indicates which operational runway is being measured for visible range."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "runway measured"
+    }
+  }, {
+    "id": "nas:runwayWidthInFeet",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#runwayWidthInFeet",
+    "type": "text",
+    "description": {
+      "en": "The width in feet of the physical runway."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "runway width in feet"
+    }
+  }, {
+    "id": "nas:sidstarID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#sidstarID",
+    "type": "text",
+    "description": {
+      "en": "The FAA identifier for the SID or STAR. Typically, but not uniformly, 5 alpha characters plus a revision digit."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "sidstar ID"
+    }
+  }, {
+    "id": "nas:startingTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#startingTime",
+    "type": "text",
+    "description": {
+      "en": "The beginning of the hour stored as a datetime value."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "starting time"
+    }
+  }, {
+    "id": "nas:taxiwayFootprint",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#taxiwayFootprint",
+    "type": "text",
+    "description": {
+      "en": "Associates a taxiway with its bounding two-dimensional rectangle."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "taxiway location"
+    }
+  }, {
+    "id": "nas:taxiwayID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#taxiwayID",
+    "type": "text",
+    "description": {
+      "en": "An identifier for the taxiway."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "taxiway ID"
+    }
+  }, {
+    "id": "nas:terminalID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#terminalID",
+    "type": "text",
+    "description": {
+      "en": "The alphanumeric identifier of the airport terminal."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "terminal ID"
+    }
+  }, {
+    "id": "nas:tfmsMonitorAlertParameter",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#tfmsMonitorAlertParameter",
+    "type": "text",
+    "description": {
+      "en": "The maximum number of aircraft permitted in a given sector at any time, per agreement between FAA and Air Traffic Controller union. MAP (Monitor Alert Parameter) is a TFMS input parameter."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "tfms monitor alert parameter"
+    }
+  }, {
+    "id": "nas:tierLevel",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#tierLevel",
+    "type": "text",
+    "description": {
+      "en": "The degree number of the ARTCC tier. Tier 1 includes the central ARTCC plus all ARTCCs immediately adjoining the central ARTCC; tier 2 includes tier 1 plus all adjacent ARTCCs two steps away from the central ARTCC. And so on."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "tier level"
+    }
+  }, {
+    "id": "nas:touchdownPoint",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#touchdownPoint",
+    "type": "text",
+    "description": {
+      "en": "Links to the geographical point location that is the touchdown spot on the operational runway."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "touchdown point"
+    }
+  }, {
+    "id": "nas:towerID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#towerID",
+    "type": "text",
+    "description": {
+      "en": "The FAA identifier for air traffic control tower."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "tower ID"
+    }
+  }, {
+    "id": "nas:withinARTCC",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#withinARTCC",
+    "type": "text",
+    "description": {
+      "en": "Links the airport to the ARTCC within which it is located."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "within ARTCC"
+    }
+  }, {
+    "id": "nas:withinTimezone",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#withinTimezone",
+    "type": "text",
+    "description": {
+      "en": "The timezone identifier for the airport, where the timezone is specified as Area/Location, e.g. America/New_York."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "within timezone"
+    }
+  }, {
+    "id": "nas",
+    "type": "group",
+    "label": {
+      "en": "ATM schema"
+    },
+    "nodetype": "RESOURCE",
+    "items": ["nas:ARTCC", "nas:ARTCCtier", "nas:ATCSCC", "nas:ATCT", "nas:AirCarrier", "nas:AircraftEngineManufacturer", "nas:AirframeManufacturer", "nas:Airport", "nas:AirportInfrastructureComponent", "nas:AirportRoute", "nas:AirportServiceVehicle", "nas:AirspaceInfrastructureComponent", "nas:AirspaceLayer", "nas:AirspaceRoute", "nas:AviationIndustryManufacturer", "nas:AviationServiceProvider", "nas:CONUSairport", "nas:CanadianAirport", "nas:CommonRoute", "nas:DeicingPad", "nas:DeicingQueue", "nas:DeicingTruck", "nas:FederalAirway", "nas:Gate", "nas:GovernmentAviationServiceProvider", "nas:InternationalAirport", "nas:JetRoute", "nas:NASday", "nas:NASfacility", "nas:NAShour", "nas:NonCONUSairport", "nas:OperationalRunway", "nas:PhysicalRunway", "nas:QRoute", "nas:RNAVroute", "nas:RadialRoute", "nas:RampTower", "nas:RefuelingTruck", "nas:RunwayVisibleRangeMeasurement", "nas:SID", "nas:SIDSTAR", "nas:SIDSTARroute", "nas:STAR", "nas:Sector", "nas:StandAloneWeatherStation", "nas:TRACON", "nas:TRoute", "nas:Taxiway", "nas:Terminal", "nas:TransitionRoute", "nas:USairport", "nas:VORroute", "nas:VictorRoute", "nas:adjacentSector", "nas:airCarrierAlias", "nas:airCarrierName", "nas:airlineCallsign", "nas:airportBoundary", "nas:airportLocation", "nas:airportName", "nas:airspaceLayerHighAltitude", "nas:airspaceLayerLowAltitude", "nas:arrivalRouteAirport", "nas:artccID", "nas:associatedAirport", "nas:associatedOpRunway", "nas:calendarMonth", "nas:calendarYear", "nas:countryOfRegistry", "nas:date", "nas:dayOfMonth", "nas:deicingPadLocation", "nas:departureRouteAirport", "nas:faaAirportCode", "nas:gateID", "nas:hasAirportRoute", "nas:hasAirspaceLayerGeometry", "nas:hasCenterGeometry", "nas:hasCommonRoute", "nas:hasGate", "nas:hasLOAwith", "nas:hasQueue", "nas:hasRampTower", "nas:hasRunway", "nas:hasSID", "nas:hasSTAR", "nas:hasSectorID", "nas:hasSectorLayer", "nas:hasSectorName", "nas:hasTRACONcity", "nas:hasTRACONid", "nas:hasTRACONlayer", "nas:hasTRACONname", "nas:hasTRACONstate", "nas:hasTRACONtype", "nas:hasTaxiway", "nas:hasTerminal", "nas:hasTier", "nas:hasTower", "nas:hasTransitionRoute", "nas:hoursOffsetFromUTC", "nas:iataAirportCode", "nas:iataCarrierCode", "nas:icaoAirportCode", "nas:icaoCarrierCode", "nas:includesARTCC", "nas:isInstrumentControlEligible", "nas:isWeatherReportingStation", "nas:locatedInCenter", "nas:locatedInState", "nas:manufacturerCountryName", "nas:manufacturerFullName", "nas:maxVisibility", "nas:minVisibility", "nas:routeID", "nas:runwayFootprint", "nas:runwayID", "nas:runwayLengthInFeet", "nas:runwayMeasured", "nas:runwayWidthInFeet", "nas:sidstarID", "nas:startingTime", "nas:taxiwayFootprint", "nas:taxiwayID", "nas:terminalID", "nas:tfmsMonitorAlertParameter", "nas:tierLevel", "nas:touchdownPoint", "nas:towerID", "nas:withinARTCC", "nas:withinTimezone"]
+  }]
+}

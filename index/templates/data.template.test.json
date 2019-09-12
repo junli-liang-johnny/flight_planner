@@ -1,0 +1,1035 @@
+{
+  "root": "data",
+  "label": {
+    "en": "NASA data schema"
+  },
+  "description": {
+    "en": "This is the NASA data to descirbe an airport conditions"
+  },
+  "templates": [{
+    "id": "data:ASPMmeteorologicalCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#ASPMmeteorologicalCondition",
+    "type": "text",
+    "nodetype": "URI",
+    "label": {
+      "en": "ASPM meteorological condition"
+    }
+  }, {
+    "id": "data:AirportData",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#AirportData",
+    "type": "text",
+    "description": {
+      "en": "Represents a collection of airport data for a given time period, as reported by the FAA's ASPM system."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airport Data"
+    }
+  }, {
+    "id": "data:CloudLayer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#CloudLayer",
+    "type": "text",
+    "description": {
+      "en": "Represents a cloud layer, providing its bottom and top altitude, its cloud type, and its degree of coverage."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Cloud layer"
+    }
+  }, {
+    "id": "data:CloudLayerProfile",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#CloudLayerProfile",
+    "type": "text",
+    "description": {
+      "en": "A sequence of cloud layers, ordered from the ground upward. Represents cloud conditions."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Cloud layer profile"
+    }
+  }, {
+    "id": "data:FixCapacity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#FixCapacity",
+    "type": "text",
+    "description": {
+      "en": "A subclass of interval-based data representing the maximum controllable number of aircraft flowing through a fix per some interval of time, given weather and other air traffic control constraints."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Fix capacity"
+    }
+  }, {
+    "id": "data:FixFlow",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#FixFlow",
+    "type": "text",
+    "description": {
+      "en": "A subclass of interval-based data representing the number of aircraft flowing through a fix per some interval of time."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Fix flow"
+    }
+  }, {
+    "id": "data:IntervalData",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#IntervalData",
+    "type": "text",
+    "description": {
+      "en": "State data that has a temporal lifetime: a start and end time."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Interval data"
+    }
+  }, {
+    "id": "data:METARreport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#METARreport",
+    "type": "text",
+    "description": {
+      "en": "Meteorological conditions provided in a periodic METAR report. Includes sky, wind, visibility and weather components."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "METAR Report"
+    }
+  }, {
+    "id": "data:METARreportingStation",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#METARreportingStation",
+    "type": "text",
+    "description": {
+      "en": "A weather reporting station that provides sensor data for a METAR report. Many airports are also METAR reporting stations."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "METARreporting station"
+    }
+  }, {
+    "id": "data:MetCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#MetCondition",
+    "type": "text",
+    "description": {
+      "en": "A superclass over the various types of meteorological conditions."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Meteorological condition"
+    }
+  }, {
+    "id": "data:MeteorologicalCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#MeteorologicalCondition",
+    "type": "text",
+    "description": {
+      "en": "A representation of the meteorological status for the specified time period, including sky, wind, visibility, and weather subcomponents."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Meteorological condition"
+    }
+  }, {
+    "id": "data:RunwayReport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#RunwayReport",
+    "type": "text",
+    "description": {
+      "en": "A report on runway conditions during a specified interval of time, focusing on runway status (open vs. closed) and surface friction during winter precipitation."
+    },
+    "nodetype": "URI"
+  }, {
+    "id": "data:RunwayStatusData",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#RunwayStatusData",
+    "type": "text",
+    "description": {
+      "en": "This class describes a temporally-dependent set of data about the operating status of a physical runway."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Runway status data"
+    }
+  }, {
+    "id": "data:SectorCapacity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#SectorCapacity",
+    "type": "text",
+    "description": {
+      "en": "A subclass of interval-based data representing the maximum number of controllable aircraft flowing through a sector during some interval of time."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Sector capacity"
+    }
+  }, {
+    "id": "data:SectorFlow",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#SectorFlow",
+    "type": "text",
+    "description": {
+      "en": "A subclass of interval-based data representing the number of aircraft flowing through a sector during some interval of time."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Sector flow"
+    }
+  }, {
+    "id": "data:SkyCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#SkyCondition",
+    "type": "text",
+    "description": {
+      "en": "The current or forecast sky conditions, including the ceiling and information on the cloud layers present."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Sky condition"
+    }
+  }, {
+    "id": "data:SurfaceWindCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#SurfaceWindCondition",
+    "type": "text",
+    "description": {
+      "en": "The current or forecast surface wind conditions."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Surface wind condition"
+    }
+  }, {
+    "id": "data:TAFmeteorologicalCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#TAFmeteorologicalCondition",
+    "type": "text",
+    "description": {
+      "en": "Meteorological conditions reported as part of a TAF forecast. Includes sky, wind, visibility and weather components for current and future time periods."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "TAF meteorological condition"
+    }
+  }, {
+    "id": "data:TAFreport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#TAFreport",
+    "type": "text",
+    "description": {
+      "en": "Meteorological conditions provided in a periodic TAF forecast. Includes sky, wind, visibility and weather components."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "TAF report"
+    }
+  }, {
+    "id": "data:VisibilityCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#VisibilityCondition",
+    "type": "text",
+    "description": {
+      "en": "The current or forecast surface visibility conditions at a given airport or other reporting station."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Visibility condition"
+    }
+  }, {
+    "id": "data:WITIproperty",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#WITIproperty",
+    "type": "text",
+    "description": {
+      "en": "A class of different properties relating to WITI (Weather-Impacted Traffic Index)"
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "WITIproperty"
+    }
+  }, {
+    "id": "data:WeatherCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#WeatherCondition",
+    "type": "text",
+    "description": {
+      "en": "The current or forecast weather conditions at a given airport or other reporting station."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Weather condition"
+    }
+  }, {
+    "id": "data:airportArrivalRate",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#airportArrivalRate",
+    "type": "text",
+    "description": {
+      "en": "The arrival rate per hour set by the airport during the specified interval. This is the total number of aircraft that can arrive on all runways combined during an hour."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "airport arrival rate"
+    }
+  }, {
+    "id": "data:airportDepartureRate",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#airportDepartureRate",
+    "type": "text",
+    "description": {
+      "en": "The departure rate per hour set by the airport during the specified interval. This is the total number of aircraft that can depart from all runways combined during an hour."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "airport departure rate"
+    }
+  }, {
+    "id": "data:arrivalDemand",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#arrivalDemand",
+    "type": "text",
+    "description": {
+      "en": "The number of aircraft intending to arrive at an airport during the specified time period."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "arrival demand"
+    }
+  }, {
+    "id": "data:aspmFlightRules",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#aspmFlightRules",
+    "type": "text",
+    "description": {
+      "en": "Indicates what flight rule conditions the airport is operating under during the specified time period (I-instrument, V-Visual)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ASPM Flight Rules"
+    }
+  }, {
+    "id": "data:associatedMETARreportingStation",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#associatedMETARreportingStation",
+    "type": "text",
+    "description": {
+      "en": "Links a METAR report to the reporting station where the data were collected."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "METAR reporting station"
+    }
+  }, {
+    "id": "data:baseAltitude",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#baseAltitude",
+    "type": "text",
+    "description": {
+      "en": "For a given homogeonous cloud layer, this is the lowest altitude."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "base altitude"
+    }
+  }, {
+    "id": "data:ceiling",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#ceiling",
+    "type": "text",
+    "description": {
+      "en": "The vertical visibility (in feet) measured from the ground to the lowest cloud layer reported as broken or overcast."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ceiling"
+    }
+  }, {
+    "id": "data:cloudCover",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#cloudCover",
+    "type": "text",
+    "description": {
+      "en": "For a given homogenous cloud layer, the type of cloud cover present: clear, few clouds, scattered clouds, broken clouds, overcast, vertical visibility layer."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "cloud cover"
+    }
+  }, {
+    "id": "data:cloudType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#cloudType",
+    "type": "text",
+    "description": {
+      "en": "For a given homogeneous cloud layer, the type of cloud present: towering cumulus, cumulonimbus, altocumulus castellanus."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "cloud type"
+    }
+  }, {
+    "id": "data:dataIntervalEndDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#dataIntervalEndDay",
+    "type": "text",
+    "description": {
+      "en": "Links temporally-dependent data to the ending day of its period of validity."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "data interval end day"
+    }
+  }, {
+    "id": "data:dataIntervalEndTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#dataIntervalEndTime",
+    "type": "text",
+    "description": {
+      "en": "For temporally-dependent data, the ending time of the data's period of validity."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "data interval end time"
+    }
+  }, {
+    "id": "data:dataIntervalStartDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#dataIntervalStartDay",
+    "type": "text",
+    "description": {
+      "en": "Links temporally-dependent data to the starting day of its period of validity."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "data interval start day"
+    }
+  }, {
+    "id": "data:dataIntervalStartTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#dataIntervalStartTime",
+    "type": "text",
+    "description": {
+      "en": "For temporally-dependent data, the starting time of the data's period of validity."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "data interval start time"
+    }
+  }, {
+    "id": "data:departureDemand",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#departureDemand",
+    "type": "text",
+    "description": {
+      "en": "The number of aircraft intending to depart during the specified time period."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "departure demand"
+    }
+  }, {
+    "id": "data:dewpoint",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#dewpoint",
+    "type": "text",
+    "description": {
+      "en": "The dewpoint recorded as part of a meteorological condition report."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "dewpoint"
+    }
+  }, {
+    "id": "data:edctArrivalHold",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#edctArrivalHold",
+    "type": "text",
+    "description": {
+      "en": "EDCT (Estimated Departure Clearance Time) hold minutes at other airports arriving this airport."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "EDCT arrival hold"
+    }
+  }, {
+    "id": "data:edctDepartureHold",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#edctDepartureHold",
+    "type": "text",
+    "description": {
+      "en": "EDCT (Estimated Departure Clearance Time) hold minutes at other airports departing this airport."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "EDCT departure hold"
+    }
+  }, {
+    "id": "data:etmsArrivals",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#etmsArrivals",
+    "type": "text",
+    "description": {
+      "en": "Count of arrivals at airport based on ETMS (Enhanced Traffic Management System) data."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "etms arrivals"
+    }
+  }, {
+    "id": "data:etmsDepartures",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#etmsDepartures",
+    "type": "text",
+    "description": {
+      "en": "Count of departures at airport based on ETMS (Enhanced Traffic Management System) data."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "etms arrivals"
+    }
+  }, {
+    "id": "data:forecastIssueTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#forecastIssueTime",
+    "type": "text",
+    "description": {
+      "en": "The time that the TAF (Terminal Area Forecast) report was issued."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "forecast issue time"
+    }
+  }, {
+    "id": "data:forecastingAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#forecastingAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the airport for which the TAF (Terminal Area Forecast) report was compiled."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "forecasting airport"
+    }
+  }, {
+    "id": "data:hasASPMmetCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasASPMmetCondition",
+    "type": "text",
+    "description": {
+      "en": "Links meteorological information to the collection of temporally-dependent data associated with an airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has ASPMmet condition"
+    }
+  }, {
+    "id": "data:hasAirportData",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasAirportData",
+    "type": "text",
+    "description": {
+      "en": "Links an airport to a collection of temporally-dependent data pertinent to the airport conditions, including a variety of data collected in the ASPM system."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has airport data"
+    }
+  }, {
+    "id": "data:hasCloudLayerProfile",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasCloudLayerProfile",
+    "type": "text",
+    "description": {
+      "en": "Links a sky condition to a representation of the cloud layers present."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has cloud layer profile"
+    }
+  }, {
+    "id": "data:hasMETARreport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasMETARreport",
+    "type": "text",
+    "description": {
+      "en": "Associates a METAR reporting station with METAR weather reports generated for that station."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has METARreport"
+    }
+  }, {
+    "id": "data:hasSkyCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasSkyCondition",
+    "type": "text",
+    "description": {
+      "en": "Associates a meteorological condition with the details of the sky and cloud conditions at the reporting location.."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has sky condition"
+    }
+  }, {
+    "id": "data:hasSurfaceWindCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasSurfaceWindCondition",
+    "type": "text",
+    "description": {
+      "en": "Associates a meteorological condition with the details of the surface wind conditions at the reporting location.."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has surface wind condition"
+    }
+  }, {
+    "id": "data:hasTAFreport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasTAFreport",
+    "type": "text",
+    "description": {
+      "en": "Associates an airport with TAF weather reports generated for that airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has TAFreport"
+    }
+  }, {
+    "id": "data:hasVisibilityCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasVisibilityCondition",
+    "type": "text",
+    "description": {
+      "en": "Associates a meteorological condition with the details of the surface visibility conditions at the reporting location.."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has visibility condition"
+    }
+  }, {
+    "id": "data:hasWeatherCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hasWeatherCondition",
+    "type": "text",
+    "description": {
+      "en": "Associates a meteorological condition with the details of the weather conditions at the reporting location."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has weather condition"
+    }
+  }, {
+    "id": "data:highWindWITIdaily",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#highWindWITIdaily",
+    "type": "text",
+    "description": {
+      "en": "The high wind weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the winds at the airport are above a set threshold, then the high wind WITI is set to the number of scheduled arrivals for that timeframe."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "high wind WITI daily"
+    }
+  }, {
+    "id": "data:highWindWITIhourly",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#highWindWITIhourly",
+    "type": "text",
+    "description": {
+      "en": "The high wind weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the winds at the airport are above a set threshold, then the high wind WITI is set to the number of scheduled arrivals for that timeframe."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "high wind WITI hourly"
+    }
+  }, {
+    "id": "data:hourlyPrecipitation",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#hourlyPrecipitation",
+    "type": "text",
+    "description": {
+      "en": "Recorded hourly precipitation rate at the measurement station in inches."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "hourly precipitation"
+    }
+  }, {
+    "id": "data:limitedVisibilityDistance",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#limitedVisibilityDistance",
+    "type": "text",
+    "description": {
+      "en": "The visibility distance (in miles) at the reporting station. Only applicable if data:unlimitedVisibility is False."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "limited visibility distance"
+    }
+  }, {
+    "id": "data:lowCeilingWITIdaily",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#lowCeilingWITIdaily",
+    "type": "text",
+    "description": {
+      "en": "The low ceiling weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the ceiling at the airport is below a set threshold, then the low ceiling WITI is set to the number of scheduled arrivals for that timeframe."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "low ceiling WITI daily"
+    }
+  }, {
+    "id": "data:lowCeilingWITIhourly",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#lowCeilingWITIhourly",
+    "type": "text",
+    "description": {
+      "en": "The low ceiling weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the ceiling at the airport is below a set threshold, then the low ceiling WITI is set to the number of scheduled arrivals for that timeframe."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "low ceiling WITI hourly"
+    }
+  }, {
+    "id": "data:lowVisibilityWITIdaily",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#lowVisibilityWITIdaily",
+    "type": "text",
+    "description": {
+      "en": "The low visibility weather impacted traffic index (WITI) computed for the airport during the specified timeframe (daily). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the visibility at the airport is below a set threshold, then the low visibility WITI is set to the number of scheduled arrivals for that timeframe."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "low visibility WITI daily"
+    }
+  }, {
+    "id": "data:lowVisibilityWITIhourly",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#lowVisibilityWITIhourly",
+    "type": "text",
+    "description": {
+      "en": "The low visibility weather impacted traffic index (WITI) computed for the airport during the specified timeframe (hourly). WITI is an estimate of the number of flights potentially impacted due to inclement weather based on the scheduled traffic demand for a defined geographic region of the air traffic system (in this case, an airport). If the visibility at the airport is below a set threshold, then the low visibility WITI is set to the number of scheduled arrivals for that timeframe."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "low visibility WITI hourly"
+    }
+  }, {
+    "id": "data:metConditionProbability",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#metConditionProbability",
+    "type": "text",
+    "description": {
+      "en": "For a forecast meteorological condition, the percent probability associated with the forecast occurrence."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "met condition probability"
+    }
+  }, {
+    "id": "data:metarReportModifier",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#metarReportModifier",
+    "type": "text",
+    "description": {
+      "en": "Automation status information pertaining to a METAR report: AUTO indicates a fully automated report with no human intervention; COR indicates a corrected observation; no modifier indicates either human observer/reporter or automated report with human oversight."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "metar report modifier"
+    }
+  }, {
+    "id": "data:metarReportString",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#metarReportString",
+    "type": "text",
+    "description": {
+      "en": "Entire text of METAR report."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "METAR report string"
+    }
+  }, {
+    "id": "data:metarReportType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#metarReportType",
+    "type": "text",
+    "description": {
+      "en": "METAR report type indicator specifies whether this report is a regularly scheduled hourly report (METAR) or a special unscheduled report (SPECI). SPECIs are issued more frequently than hourly when adverse weather conditions prevail."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "metar report type"
+    }
+  }, {
+    "id": "data:metarStationHasPrecipitationSensor",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#metarStationHasPrecipitationSensor",
+    "type": "text",
+    "description": {
+      "en": "A boolean value indicating whether the reporting METAR station has a precipitation sensor."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "metar station has precipitation sensor"
+    }
+  }, {
+    "id": "data:meteorologicalConditionStatus",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#meteorologicalConditionStatus",
+    "type": "text",
+    "description": {
+      "en": "An indicator of whether the meteorological condition is based on actual observations (observed) or on future projections (forecast)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "meteorological condition status"
+    }
+  }, {
+    "id": "data:oagArrivalDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#oagArrivalDelay",
+    "type": "text",
+    "description": {
+      "en": "Minutes of OAG (Official Airline Guide) based arrival delay in excess of 15 minutes."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "OAG arrival delay"
+    }
+  }, {
+    "id": "data:oagGateDepartureDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#oagGateDepartureDelay",
+    "type": "text",
+    "description": {
+      "en": "Minutes of OAG (Official Airline Guide) based gate departure delay in excess of 15 minutes."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "OAG gate departure delay"
+    }
+  }, {
+    "id": "data:rapidityOfWeatherChange",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#rapidityOfWeatherChange",
+    "type": "text",
+    "description": {
+      "en": "Indicates how fast change is expected from the prior state to the forecast meteorological conditions: "
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "rapidity of weather change"
+    }
+  }, {
+    "id": "data:runwayReportedOn",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#runwayReportedOn",
+    "type": "text",
+    "description": {
+      "en": "Associates a runway status report with the physical runway being measured."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "runway reported on"
+    }
+  }, {
+    "id": "data:runwayStatus",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#runwayStatus",
+    "type": "text",
+    "description": {
+      "en": "An indicator of whether the runway is open or closed during the specified period."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "runway status"
+    }
+  }, {
+    "id": "data:runwaySurfaceFriction",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#runwaySurfaceFriction",
+    "type": "text",
+    "description": {
+      "en": "The surface friction (mu) value of the runway for the specified period. Runway surface friction is directly relevant to the braking action which will be available to an aircraft decelerating after touch down, or after a decision to reject a take off."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "runway surface friction (mu)"
+    }
+  }, {
+    "id": "data:runwayVisibleRange",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#runwayVisibleRange",
+    "type": "text",
+    "description": {
+      "en": "Links a visibility condition to a runway visible range measurement class instance."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "runway visible range"
+    }
+  }, {
+    "id": "data:scheduledArrivals",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#scheduledArrivals",
+    "type": "text",
+    "description": {
+      "en": "Count of scheduled arrivals. (Most probably from OAG (Official Airline Guide))"
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "scheduled arrivals"
+    }
+  }, {
+    "id": "data:scheduledDepartures",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#scheduledDepartures",
+    "type": "text",
+    "description": {
+      "en": "Count of scheduled departures. (Most probably from OAG (Official Airline Guide))"
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "scheduled departures"
+    }
+  }, {
+    "id": "data:seaLevelPressure",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#seaLevelPressure",
+    "type": "text",
+    "description": {
+      "en": "Sea level pressure measured under the associated meteorological conditions."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "sea level pressure"
+    }
+  }, {
+    "id": "data:surfaceGustSpeed",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#surfaceGustSpeed",
+    "type": "text",
+    "description": {
+      "en": "Surface gust speed measured under the associated surface wind conditions."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "surface gust speed"
+    }
+  }, {
+    "id": "data:surfaceTemperature",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#surfaceTemperature",
+    "type": "text",
+    "description": {
+      "en": "Surface temperature measured under the associated meteorological conditions."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "surface temperature"
+    }
+  }, {
+    "id": "data:surfaceWindDirectionStatus",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#surfaceWindDirectionStatus",
+    "type": "text",
+    "description": {
+      "en": "Information about the direction of the wind, either fixed, varyingWithinRange, or variable."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "surface wind direction status"
+    }
+  }, {
+    "id": "data:surfaceWindSpeed",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#surfaceWindSpeed",
+    "type": "text",
+    "description": {
+      "en": "The speed in knots of the surface wind."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "surface wind speed"
+    }
+  }, {
+    "id": "data:tafReportString",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#tafReportString",
+    "type": "text",
+    "description": {
+      "en": "The full text of the entire TAF report."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "taf report string"
+    }
+  }, {
+    "id": "data:tafReportType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#tafReportType",
+    "type": "text",
+    "description": {
+      "en": "Type of Terminal Area Forecast (TAF) report: a routine report (TAF), an amended report (AMD), a corrected report (COR), or a delayed report (RTD). An amended TAF is issued when the current TAF no longer adequately describes the ongoing weather or the forecaster feels the TAF is not representative of the current or expected weather."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "taf report type"
+    }
+  }, {
+    "id": "data:topAltitude",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#topAltitude",
+    "type": "text",
+    "description": {
+      "en": "The top altitude of a homogenous cloud layer."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "top altitude"
+    }
+  }, {
+    "id": "data:totalAirborneDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#totalAirborneDelay",
+    "type": "text",
+    "description": {
+      "en": "Total airborne flight delay in minutes for this airport during the specified period."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "total airborne delay"
+    }
+  }, {
+    "id": "data:unlimitedVisibility",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#unlimitedVisibility",
+    "type": "text",
+    "description": {
+      "en": "A binary property indicating whether the visibility conditions are unlimited."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "unlimited visibility"
+    }
+  }, {
+    "id": "data:weatherIntensity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#weatherIntensity",
+    "type": "text",
+    "description": {
+      "en": "An indicator of the intensity of the weather: light, moderate, heavy."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "weather intensity"
+    }
+  }, {
+    "id": "data:weatherPhenomenon",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#weatherPhenomenon",
+    "type": "text",
+    "description": {
+      "en": "Describes the type of weather phenomena experienced during the specified period: drizzle, rain, snow, snow grains, ice crystals, ice pellets, hail, small hail and/or snow pellets, unknown precipitation, mist, fog, smoke, volcanic ash, widespread dust, sand, haze, spray, well-developed dust/sand whirls, squalls, funnel cloud, tornado/waterspout, sandstorm, duststorm"
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "weather phenomenon"
+    }
+  }, {
+    "id": "data:weatherProximity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#weatherProximity",
+    "type": "text",
+    "description": {
+      "en": "Describes the location of the weather phenomena in relation to the reporting station: immediate proximity or in vicinity."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "weather proximity"
+    }
+  }, {
+    "id": "data:weatherQualifier",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#weatherQualifier",
+    "type": "text",
+    "description": {
+      "en": "An additional qualifier describing the reported weather phenomenon: shallow, partial, patchy, low drifting, blowing, shower, thunderstorm, freezing."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "weather qualifier"
+    }
+  }, {
+    "id": "data:windDirectionFixed",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#windDirectionFixed",
+    "type": "text",
+    "description": {
+      "en": "Steady wind direction (in degrees), when winds are fixed and not variable."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "fixed wind direction"
+    }
+  }, {
+    "id": "data:windDirectionLower",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#windDirectionLower",
+    "type": "text",
+    "description": {
+      "en": "Lower bound (in degrees) of two bounding values describing a variable wind direction."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "lower wind direction"
+    }
+  }, {
+    "id": "data:windDirectionUpper",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#windDirectionUpper",
+    "type": "text",
+    "description": {
+      "en": "Upper bound (in degrees) of two bounding values describing a variable wind direction."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "lower wind direction"
+    }
+  }, {
+    "id": "data:windShearHeight",
+    "property": "https://data.nasa.gov/ontologies/atmonto/data#windShearHeight",
+    "type": "text",
+    "description": {
+      "en": "The height in hundreds of feet above ground level associated with a wind shear phenomenon."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "wind shear height"
+    }
+  }, {
+    "id": "data",
+    "type": "group",
+    "label": {
+      "en": "NASA data schema"
+    },
+    "nodetype": "RESOURCE",
+    "items": ["data:ASPMmeteorologicalCondition", "data:AirportData", "data:CloudLayer", "data:CloudLayerProfile", "data:FixCapacity", "data:FixFlow", "data:IntervalData", "data:METARreport", "data:METARreportingStation", "data:MetCondition", "data:MeteorologicalCondition", "data:RunwayReport", "data:RunwayStatusData", "data:SectorCapacity", "data:SectorFlow", "data:SkyCondition", "data:SurfaceWindCondition", "data:TAFmeteorologicalCondition", "data:TAFreport", "data:VisibilityCondition", "data:WITIproperty", "data:WeatherCondition", "data:airportArrivalRate", "data:airportDepartureRate", "data:arrivalDemand", "data:aspmFlightRules", "data:associatedMETARreportingStation", "data:baseAltitude", "data:ceiling", "data:cloudCover", "data:cloudType", "data:dataIntervalEndDay", "data:dataIntervalEndTime", "data:dataIntervalStartDay", "data:dataIntervalStartTime", "data:departureDemand", "data:dewpoint", "data:edctArrivalHold", "data:edctDepartureHold", "data:etmsArrivals", "data:etmsDepartures", "data:forecastIssueTime", "data:forecastingAirport", "data:hasASPMmetCondition", "data:hasAirportData", "data:hasCloudLayerProfile", "data:hasMETARreport", "data:hasSkyCondition", "data:hasSurfaceWindCondition", "data:hasTAFreport", "data:hasVisibilityCondition", "data:hasWeatherCondition", "data:highWindWITIdaily", "data:highWindWITIhourly", "data:hourlyPrecipitation", "data:limitedVisibilityDistance", "data:lowCeilingWITIdaily", "data:lowCeilingWITIhourly", "data:lowVisibilityWITIdaily", "data:lowVisibilityWITIhourly", "data:metConditionProbability", "data:metarReportModifier", "data:metarReportString", "data:metarReportType", "data:metarStationHasPrecipitationSensor", "data:meteorologicalConditionStatus", "data:oagArrivalDelay", "data:oagGateDepartureDelay", "data:rapidityOfWeatherChange", "data:runwayReportedOn", "data:runwayStatus", "data:runwaySurfaceFriction", "data:runwayVisibleRange", "data:scheduledArrivals", "data:scheduledDepartures", "data:seaLevelPressure", "data:surfaceGustSpeed", "data:surfaceTemperature", "data:surfaceWindDirectionStatus", "data:surfaceWindSpeed", "data:tafReportString", "data:tafReportType", "data:topAltitude", "data:totalAirborneDelay", "data:unlimitedVisibility", "data:weatherIntensity", "data:weatherPhenomenon", "data:weatherProximity", "data:weatherQualifier", "data:windDirectionFixed", "data:windDirectionLower", "data:windDirectionUpper", "data:windShearHeight"]
+  }]
+}

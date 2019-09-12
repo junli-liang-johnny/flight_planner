@@ -1,0 +1,1821 @@
+{
+  "root": "atm",
+  "label": {
+    "en": "ATM schema"
+  },
+  "description": {
+    "en": "This is NASA ATM schema"
+  },
+  "templates": [{
+    "id": "atm:AbsoluteFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AbsoluteFix",
+    "type": "text",
+    "nodetype": "URI",
+    "label": {
+      "en": "Absolute fix"
+    }
+  }, {
+    "id": "atm:ActualFlightRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#ActualFlightRoute",
+    "type": "text",
+    "description": {
+      "en": "A flight trajectory (i.e., a sequence of track points), as determined by flight track surveillance data."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Actual Flight Route"
+    }
+  }, {
+    "id": "atm:AircraftCapacity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AircraftCapacity",
+    "type": "text",
+    "description": {
+      "en": "A subclass of interval-based data representing the maximum number of controllable aircraft flowing through an airspace region during some interval of time."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Aircraft capacity"
+    }
+  }, {
+    "id": "atm:AircraftFlow",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AircraftFlow",
+    "type": "text",
+    "description": {
+      "en": "A subclass of interval-based data representing the number of aircraft flowing through an airspace region during some interval of time."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Aircraft flow"
+    }
+  }, {
+    "id": "atm:AircraftFlowCapacity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AircraftFlowCapacity",
+    "type": "text",
+    "description": {
+      "en": "A subclass of interval-based data representing the maximum controllable number of aircraft flowing through an airspace region during some interval of time, given weather and other air traffic control constraints."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Aircraft flow capacity"
+    }
+  }, {
+    "id": "atm:AircraftTrackPoint",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AircraftTrackPoint",
+    "type": "text",
+    "description": {
+      "en": "A point during a flight where various flight parameters are captured and sent (via transponder) to FAA computers."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Aircraft Track Point"
+    }
+  }, {
+    "id": "atm:AirportFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AirportFix",
+    "type": "text",
+    "description": {
+      "en": "A subclass of navigation fix corresponding to fixes associated directly with a ground reference point that is an airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airport Fix"
+    }
+  }, {
+    "id": "atm:AirportSpec",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AirportSpec",
+    "type": "text",
+    "description": {
+      "en": "A specification of a set of airports."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airport spec"
+    }
+  }, {
+    "id": "atm:AirspaceFlowProgramTMI",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AirspaceFlowProgramTMI",
+    "type": "text",
+    "description": {
+      "en": "A subclass of Traffic Management Initiative involving control and metering of air traffic through specified airspace volumes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airspace Flow Program (AFP)"
+    }
+  }, {
+    "id": "atm:AirspaceRouteSegment",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#AirspaceRouteSegment",
+    "type": "text",
+    "description": {
+      "en": "A contiguous portion of an existing airspace route."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Airspace route segment"
+    }
+  }, {
+    "id": "atm:CrewMember",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#CrewMember",
+    "type": "text",
+    "description": {
+      "en": "The set of inflight airline personnel operating or performing servicing functions on a flight (pilots and cabin attendants)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Crew member"
+    }
+  }, {
+    "id": "atm:DelayModel",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#DelayModel",
+    "type": "text",
+    "description": {
+      "en": "This class represents a computational delay model used in assigning times to the aircraft involved in the GDP or GS. The properties of this class correspond to parameters that are used by the delay model to compute the delay times."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "GDPmodel"
+    }
+  }, {
+    "id": "atm:FRDfix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#FRDfix",
+    "type": "text",
+    "description": {
+      "en": "A Fix Radial Distance (FRD) fix is located a specified distance from a ground-based navaid, a named fix, or an airport, along a given radial vector."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "FRD Fix"
+    }
+  }, {
+    "id": "atm:Flight",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#Flight",
+    "type": "text",
+    "description": {
+      "en": "A single flight segment from origin to destination."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Flight"
+    }
+  }, {
+    "id": "atm:FlightPlanSegment",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#FlightPlanSegment",
+    "type": "text",
+    "description": {
+      "en": "A contiguous portion of a complete flight plan."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Flight plan segment"
+    }
+  }, {
+    "id": "atm:FlightSpec",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#FlightSpec",
+    "type": "text",
+    "description": {
+      "en": "A specification describing a set of flights."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Flight spec"
+    }
+  }, {
+    "id": "atm:GDPmodel",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#GDPmodel",
+    "type": "text",
+    "description": {
+      "en": "This model provides parameters to the code that assigns times to the aircraft involved in the GDP or GS"
+    },
+    "nodetype": "URI"
+  }, {
+    "id": "atm:GPSfix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#GPSfix",
+    "type": "text",
+    "description": {
+      "en": "A navigation fix defined by GPS coordinates."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "GPS fix"
+    }
+  }, {
+    "id": "atm:GroundDelayProgramTMI",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#GroundDelayProgramTMI",
+    "type": "text",
+    "description": {
+      "en": "A Ground Delay Program (GDP) traffic management initiative (TMI). A Ground Delay Program (GDP) is a traffic management procedure where aircraft are delayed at their departure airport in order to manage demand and capacity at their arrival airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Ground Delay Program (GDP)"
+    }
+  }, {
+    "id": "atm:GroundStopTMI",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#GroundStopTMI",
+    "type": "text",
+    "description": {
+      "en": "A Ground Stop (GS) traffic management initiative (TMI). A ground stop is a procedure requiring aircraft that meet specific criteria to remain on the ground. The GS may be airport specific, related to a geographical area, or equipment related."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Ground Stop (GS)"
+    }
+  }, {
+    "id": "atm:IntersectionFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#IntersectionFix",
+    "type": "text",
+    "description": {
+      "en": "A navigation fix defined by the intersection of two airspace routes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Intersection fix"
+    }
+  }, {
+    "id": "atm:LatLonFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#LatLonFix",
+    "type": "text",
+    "description": {
+      "en": "A navigation fix based on latitude/longitude coordinates."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Lat-lon fix"
+    }
+  }, {
+    "id": "atm:MeterFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#MeterFix",
+    "type": "text",
+    "description": {
+      "en": "A fix defined as an point in the terminal airspace through which flights are metered by air traffic control on approach."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Meter fix"
+    }
+  }, {
+    "id": "atm:MilesInTrailTMI",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#MilesInTrailTMI",
+    "type": "text",
+    "description": {
+      "en": "A Miles-in-Trail (MIT) traffic management initiative (TMI) is used to apportion traffic into a manageable flow, as well as provide space for additional traffic (merging or departing) to enter the flow of traffic. Miles-in-trail describes the number of miles required between aircraft departing an airport, over a fix, at an altitude, through a sector, or on a specific route."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Miles in Trail (MIT)"
+    }
+  }, {
+    "id": "atm:NDBfix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NDBfix",
+    "type": "text",
+    "description": {
+      "en": "A fix based on the location of a ground-based non-directional radio beacon (NDB) installation. NDB signals follow the curvature of the Earth, so they can be received at much greater distances at lower altitudes, a major advantage over VOR. However, NDB signals are also affected more by atmospheric conditions, mountainous terrain, coastal refraction and electrical storms, particularly at long range."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "NDB Fix"
+    }
+  }, {
+    "id": "atm:NRSfix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NRSfix",
+    "type": "text",
+    "description": {
+      "en": "The NRS is a system of waypoints developed for use within the United States for flight planning and navigation without reference to ground based navigational aids. The NRS waypoints are located in a grid pattern along defined latitude and longitude lines. NRS waypoint names are composed of two letters followed by two numbers, followed by a single letter. The first and second characters of NRS waypoints are the FIR identifier for the United States (“K”) and the FIR subdivision, or ARTCC center in which the waypoint is located (e.g. “D” for Denver ARTCC). The third and fourth characters are a number group representing the latitude of the waypoint. These numbers begin at the equator with 00 and advances north and south from 01 to 90 and correspond to every 10 minutes of latitude and repeating every 15°. The final character in the NRS waypoint is a letter representing the line of longitude for which the waypoint is located. This identifier starts at the prime meridian moving west to east and uses the letters A to Z while repeating every 26°. To date, the current density of the NRS grid is one waypoint spaced every 30 minutes of latitude and every 2° of longitude."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "NRS fix"
+    }
+  }, {
+    "id": "atm:NavElementContainer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NavElementContainer",
+    "type": "text",
+    "description": {
+      "en": "A navigation element container is a wrapper around an existing navigation element, such as a fix or a route. These containers can be sequenced together to represent flight paths and flight trajectories."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Navigation element container"
+    }
+  }, {
+    "id": "atm:NavaidFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NavaidFix",
+    "type": "text",
+    "description": {
+      "en": "A fix based on the location of a ground-based Navigation Aid (Navaid) installation."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "NavaidFix"
+    }
+  }, {
+    "id": "atm:NavigationElement",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NavigationElement",
+    "type": "text",
+    "description": {
+      "en": "A navigation element is a set of components that can be used to assemble a flight plan or trajectory. They include fixes, routes, airports, SID/STAR traverses, etc."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Navigation element"
+    }
+  }, {
+    "id": "atm:NavigationFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NavigationFix",
+    "type": "text",
+    "description": {
+      "en": "A designated point on the surface of the earth used for aeronautical navigation."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Navigation fix"
+    }
+  }, {
+    "id": "atm:NavigationPath",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NavigationPath",
+    "type": "text",
+    "description": {
+      "en": "An ordered sequence of navigation elements (fixes, routes, airports) representing a path through the airspace."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Navigation path"
+    }
+  }, {
+    "id": "atm:NavigationSubPath",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NavigationSubPath",
+    "type": "text",
+    "description": {
+      "en": "A contiguous portion of an existing navigation path."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Navigation SubPath"
+    }
+  }, {
+    "id": "atm:NumericParameterContainer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#NumericParameterContainer",
+    "type": "text",
+    "description": {
+      "en": "A wrapper around a numeric parameter. Containers can be sequenced to create an ordered list of numeric parameters."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Numeric parameter container"
+    }
+  }, {
+    "id": "atm:PlannedFlightRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#PlannedFlightRoute",
+    "type": "text",
+    "description": {
+      "en": "A planned flight route is an ordered sequence of navigation elements that the pilot intends to traverse en route from origin to destination airport."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Planned flight route"
+    }
+  }, {
+    "id": "atm:PopupFactor",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#PopupFactor",
+    "type": "text",
+    "description": {
+      "en": "Factor to account for late-filing flights when modeling delays as part of a traffic management initiative (TMI) design process."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Popup factor"
+    }
+  }, {
+    "id": "atm:PopupFactorContainer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#PopupFactorContainer",
+    "type": "text",
+    "description": {
+      "en": "A wrapper around a popup factor parameter. Used to sequence popup factors in the specification of a Ground Delay Program (GDP)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Popup Factor container"
+    }
+  }, {
+    "id": "atm:PopupFactorSequence",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#PopupFactorSequence",
+    "type": "text",
+    "description": {
+      "en": "An ordered sequence of hourly popup factors used in specifying a Ground Delay Program (GDP)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Popup Factor Sequence"
+    }
+  }, {
+    "id": "atm:ProgramArrivalRate",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#ProgramArrivalRate",
+    "type": "text",
+    "description": {
+      "en": "The number of aircraft that the Ground Delay Program (GDP) is to provide to the airport for a given hour."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Program arrival rate"
+    }
+  }, {
+    "id": "atm:ProgramArrivalRateContainer",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#ProgramArrivalRateContainer",
+    "type": "text",
+    "description": {
+      "en": "A wrapper around a program arrival rate, used to sequence them into an ordered list."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Program arrival rate container"
+    }
+  }, {
+    "id": "atm:ProgramArrivalRateSequence",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#ProgramArrivalRateSequence",
+    "type": "text",
+    "description": {
+      "en": "An ordered sequence of hourly program arrival rates used in specifying a Ground Dela Program (GDP)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Program Arrival Rate Sequence"
+    }
+  }, {
+    "id": "atm:ReRouteSegment",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#ReRouteSegment",
+    "type": "text",
+    "description": {
+      "en": "One of the route segment alternatives specified as part of a ReRoute traffic management initiative (TMI)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "ReRoute segment"
+    }
+  }, {
+    "id": "atm:ReRouteTMI",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#ReRouteTMI",
+    "type": "text",
+    "description": {
+      "en": "A ReRoute is a traffic management initiative (TMI) that mandates a change in the filed flight plan for a set of specified flights. There are multiple factors that might justify a reroute, including weather, traffic congestion, unusual airspace activity, etc. The substitute flight plans route air traffic around the airspace problem area."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "ReRoute"
+    }
+  }, {
+    "id": "atm:RelativeFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#RelativeFix",
+    "type": "text",
+    "description": {
+      "en": "A fix defined in relation to another fix."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Relative fix"
+    }
+  }, {
+    "id": "atm:SIDSTARtraverse",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#SIDSTARtraverse",
+    "type": "text",
+    "description": {
+      "en": "A route through a SID (Standard Instrument Departure route) or a STAR (Standard Arrival Route), traversing a common route at minimum and optionally a transition route and/or an airport route."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "SIDSTARtraverse"
+    }
+  }, {
+    "id": "atm:TACANfix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#TACANfix",
+    "type": "text",
+    "description": {
+      "en": "A fix based on the location of a ground-based TACAN (TACtical Air Navigation) installation."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "TACAN Fix"
+    }
+  }, {
+    "id": "atm:TFMcontrolElement",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#TFMcontrolElement",
+    "type": "text",
+    "description": {
+      "en": "Any NAS entity that is potentially controlled via a TFM initiative."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "TFM control element"
+    }
+  }, {
+    "id": "atm:Taxipath",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#Taxipath",
+    "type": "text",
+    "description": {
+      "en": "A sequence of taxiways followed by an aircraft taxiing en route to/from a runway."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Taxipath"
+    }
+  }, {
+    "id": "atm:TrafficManagementInitiative",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#TrafficManagementInitiative",
+    "type": "text",
+    "description": {
+      "en": "A Traffic Management Initiative (TMI) is an orchestrated air traffic management procedure implemented as needed to control the flow of air traffic in the NAS based on capacity and demand."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "Traffic management initiative"
+    }
+  }, {
+    "id": "atm:VORfix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#VORfix",
+    "type": "text",
+    "description": {
+      "en": "A fix based on the location of a ground-based VOR (VHF Omni Directional Radio Range) installation."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "VOR Fix"
+    }
+  }, {
+    "id": "atm:actualArrivalDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalDay",
+    "type": "text",
+    "description": {
+      "en": "Links a flight with the day on which the flight arrives. This is the day determined by surveillance data sources to be the 'actual' day of arrival, versus the scheduled day or the day specified in the flight plan, etc."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "actual arrival day"
+    }
+  }, {
+    "id": "atm:actualArrivalTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalTime",
+    "type": "text",
+    "description": {
+      "en": "The time determined by surveillance data sources to be the 'actual' time of flight arrival, versus the scheduled time or the time specified in the flight plan, etc."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "actual arrival time"
+    }
+  }, {
+    "id": "atm:actualDepartureDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureDay",
+    "type": "text",
+    "description": {
+      "en": "Links a flight with the day on which the flight departs. This is the day determined by surveillance data sources to be the 'actual' day of departure, versus the scheduled day or the day specified in the flight plan, etc."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "actual departure day"
+    }
+  }, {
+    "id": "atm:actualDepartureTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime",
+    "type": "text",
+    "description": {
+      "en": "The time determined by surveillance data sources to be the 'actual' time of flight departure, versus the scheduled time or the time specified in the flight plan, etc."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "actual departure time"
+    }
+  }, {
+    "id": "atm:adlDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#adlDay",
+    "type": "text",
+    "description": {
+      "en": "Links a delay model to the day that the ADL (Aggregate Demand List) was generated. Each ADL contains information on the flights arriving and departing from an airport, or entering into and departing from a flow area."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "adl day"
+    }
+  }, {
+    "id": "atm:adlTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#adlTime",
+    "type": "text",
+    "description": {
+      "en": "The timestamp of the ADL (Aggregate Demand List) that the delay model is based upon. Each ADL contains information on the flights arriving and departing from an airport, or entering into and departing from a flow area."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "adl time"
+    }
+  }, {
+    "id": "atm:adsbID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#adsbID",
+    "type": "text",
+    "description": {
+      "en": "The unique identifier of the ADS-B (Automatic Dependent Surveillance - Broadcast) transponder unit on board the aircraft for this flight."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "adsb ID"
+    }
+  }, {
+    "id": "atm:advisoryNumber",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#advisoryNumber",
+    "type": "text",
+    "description": {
+      "en": "Advisory number as reported from the FAA Command Center database. it restarts at 001 on every new day UTC."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "advisory number"
+    }
+  }, {
+    "id": "atm:aircraftCount",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#aircraftCount",
+    "type": "text",
+    "description": {
+      "en": "The number of aircraft flowing through an airspace region per some interval of time."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "aircraft count"
+    }
+  }, {
+    "id": "atm:aircraftFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFix",
+    "type": "text",
+    "description": {
+      "en": "Links an aircraft track point with its associated navigation fix."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "aircraft fix"
+    }
+  }, {
+    "id": "atm:aircraftFlown",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#aircraftFlown",
+    "type": "text",
+    "description": {
+      "en": "Links a flight with the actual aircraft used."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "aircraft flown"
+    }
+  }, {
+    "id": "atm:aircraftTypeFlown",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#aircraftTypeFlown",
+    "type": "text",
+    "description": {
+      "en": "Links a flight with the type of aircraft flown. The aircraft 'type' corresponds to a set of aircraft models with similar characteristics."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "aircraft type flown"
+    }
+  }, {
+    "id": "atm:aircraftWeightCat",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#aircraftWeightCat",
+    "type": "text",
+    "description": {
+      "en": "Indicates the weight category as part of a flight specification constraint."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "aircraft weight category"
+    }
+  }, {
+    "id": "atm:allowedRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#allowedRoute",
+    "type": "text",
+    "description": {
+      "en": "In a reRoute traffic management initiative, there are multiple allowed routes specified between origin and destination. This property links a ReRouteTMI with its allowed routes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "allowed route"
+    }
+  }, {
+    "id": "atm:alternateArrivalAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#alternateArrivalAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the alternate arrival airport to be used in case of weather, traffic, or other unforseen contingency. The alternate airport is specified in the flight plan."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "alternate arrival airport"
+    }
+  }, {
+    "id": "atm:arrivalAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#arrivalAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the actual arrival airport for the flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "arrival airport"
+    }
+  }, {
+    "id": "atm:arrivalRunway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#arrivalRunway",
+    "type": "text",
+    "description": {
+      "en": "Links to the actual arrival runway for the flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "arrival runway"
+    }
+  }, {
+    "id": "atm:arrivalTaxiPath",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#arrivalTaxiPath",
+    "type": "text",
+    "description": {
+      "en": "Links to the taxipath followed by the flight en route to the gate."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "arrival taxi path"
+    }
+  }, {
+    "id": "atm:callSign",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#callSign",
+    "type": "text",
+    "description": {
+      "en": "The flight identifier (3-letter ICAO code plus number)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "call sign"
+    }
+  }, {
+    "id": "atm:controlledNASelement",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#controlledNASelement",
+    "type": "text",
+    "description": {
+      "en": "Links a traffic management initiative (TMI) to the airspace element being controlled by the TMI (e.g., an airport)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "controlled NASelement"
+    }
+  }, {
+    "id": "atm:cruisingAltitude",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#cruisingAltitude",
+    "type": "text",
+    "description": {
+      "en": "The cruising altitude (in number of feet) specified in the flight plan for this flight."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "cruising altitude"
+    }
+  }, {
+    "id": "atm:delayAssignmentMode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#delayAssignmentMode",
+    "type": "text",
+    "description": {
+      "en": "The type of delay assignment mode specified for this delay model: DAS, GAAP, or UDP."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "delay assignment mode"
+    }
+  }, {
+    "id": "atm:departureAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the actual departure airport for the flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "departure airport"
+    }
+  }, {
+    "id": "atm:departureRunway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#departureRunway",
+    "type": "text",
+    "description": {
+      "en": "Links to the actual departure runway for the flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "departure runway"
+    }
+  }, {
+    "id": "atm:departureScope",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#departureScope",
+    "type": "text",
+    "description": {
+      "en": "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a specification of the departure airport(s) participating in the traffic management initiative (TMI)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "departure scope"
+    }
+  }, {
+    "id": "atm:departureTaxiPath",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#departureTaxiPath",
+    "type": "text",
+    "description": {
+      "en": "Links to the taxipath followed by the flight en route to the runway."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "departure taxi path"
+    }
+  }, {
+    "id": "atm:effectiveEndDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#effectiveEndDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the expected ending day of the traffic management initiative (TMI)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "effective end day"
+    }
+  }, {
+    "id": "atm:effectiveEndTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#effectiveEndTime",
+    "type": "text",
+    "description": {
+      "en": "The expected end time of the traffic management initiative (TMI)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "effective end time"
+    }
+  }, {
+    "id": "atm:effectiveStartDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#effectiveStartDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the expected starting day of the traffic management initiative (TMI)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "effective start day"
+    }
+  }, {
+    "id": "atm:effectiveStartTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#effectiveStartTime",
+    "type": "text",
+    "description": {
+      "en": "The expected start time of the traffic management initiative (TMI)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "effective start time"
+    }
+  }, {
+    "id": "atm:excludesARTCC",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#excludesARTCC",
+    "type": "text",
+    "description": {
+      "en": "Links an airport specification to one of more ARTCCs (Centers) or ARTCC tiers (Centers radiating out from a give ARTCC). Any airport within the ARTCC or ARTCC tier is excluded from the set of airports covered by this airport specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "excludes ARTCC"
+    }
+  }, {
+    "id": "atm:excludesAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#excludesAirport",
+    "type": "text",
+    "description": {
+      "en": "Links an airport specification to one of more airports. Any airport linked is excluded from the set of airports covered by this airport specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "excludes airport"
+    }
+  }, {
+    "id": "atm:excludesAirway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#excludesAirway",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one of more airways (routes). Any flight that traverses a linked airway is excluded from the set of flights covered by this flight specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "excludes airway"
+    }
+  }, {
+    "id": "atm:excludesFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#excludesFix",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one of more navigation fixes. Any flight that traverses a linked fix is excluded from the set of flights covered by this flight specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "excludes fix"
+    }
+  }, {
+    "id": "atm:excludesFlight",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#excludesFlight",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one of more flights. Any linked flight is excluded from the set of flights covered by this flight specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "excludes flight"
+    }
+  }, {
+    "id": "atm:exemptedAFP",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#exemptedAFP",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one of more Airspace Flow Program (AFP) traffic management initiatives (TMIs). Any flight included in one of the linked AFPs is excluded from the set of flights covered by this flight specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "exempted AFP"
+    }
+  }, {
+    "id": "atm:extensionProbability",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#extensionProbability",
+    "type": "text",
+    "description": {
+      "en": "The probability that this traffic management initiative (TMI) will be extended: LOW, MEDIUM, or HIGH."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "extension probability"
+    }
+  }, {
+    "id": "atm:fixId",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#fixId",
+    "type": "text",
+    "description": {
+      "en": "A non-unique FAA identifier for a fix. When combined with a fix ICAO code, it defines a unique fix worldwide. Often, but not always, the fixId is identical to the fixName."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "fix ID"
+    }
+  }, {
+    "id": "atm:fixName",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#fixName",
+    "type": "text",
+    "description": {
+      "en": "A unique FAA identier for a fix that can be filed as part of a flight plan. The fix name conceptually represents the worldwide-unique combination of a FixID and ICAO code. Often, but not always, the fixId is identical to the fixName."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "fix name"
+    }
+  }, {
+    "id": "atm:fixTrajectoryString",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#fixTrajectoryString",
+    "type": "text",
+    "description": {
+      "en": "This is an experimental property of a flight that stores an ordered sequence of named fixes corresponding one-to-one to the sequence of trajectory track points recorded for the flight. For a given track point, the corresponding named fix is computed by finding the closest named fix to the track point."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "fix trajectory string"
+    }
+  }, {
+    "id": "atm:flightExclusionSpec",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#flightExclusionSpec",
+    "type": "text",
+    "description": {
+      "en": "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a specification of the flight(s) excluded from the traffic management initiative (TMI)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "flight exclusion spec"
+    }
+  }, {
+    "id": "atm:flightInclusionExclusion",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#flightInclusionExclusion",
+    "type": "text",
+    "description": {
+      "en": "Links a ReRoute to a specification of the flight(s) included in or excluded from the ReRoute traffic management initiative (TMI)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "flight inclusion exclusion"
+    }
+  }, {
+    "id": "atm:flightInclusionSpec",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#flightInclusionSpec",
+    "type": "text",
+    "description": {
+      "en": "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a specification of the flight(s) included in the traffic management initiative (TMI)."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "flight inclusion spec"
+    }
+  }, {
+    "id": "atm:flightPlanETA",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#flightPlanETA",
+    "type": "text",
+    "description": {
+      "en": "The estimated time of arrival specified in the flight plan."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "flight plan ETA"
+    }
+  }, {
+    "id": "atm:flightRouteString",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#flightRouteString",
+    "type": "text",
+    "description": {
+      "en": "A string that provides the route of flight proposed in a flight plan. Syntactically, the string shows a path of fixes, airways, SIDs, and STARs, separated by either one or two dots. The string is parsed to create an equivalent ontology representation: an ordered sequence of navigation elements that are associated directly with the flight plan (atm:PlannedFlightRoute)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "flight route string"
+    }
+  }, {
+    "id": "atm:flowCapacity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#flowCapacity",
+    "type": "text",
+    "description": {
+      "en": "The maximum controllable number of aircraft flowing through an airspace region per some interval of time."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "flow capacity"
+    }
+  }, {
+    "id": "atm:flowMeasurementRegion",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#flowMeasurementRegion",
+    "type": "text",
+    "description": {
+      "en": "Links an aircraft capacity or aircraft flow to the spatial region through which flow or capacity is being monitored and measured."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "flow measurement region"
+    }
+  }, {
+    "id": "atm:groundSpeed",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#groundSpeed",
+    "type": "text",
+    "description": {
+      "en": "The reported ground speed at an aircraft track point."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ground speed"
+    }
+  }, {
+    "id": "atm:hasActualRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#hasActualRoute",
+    "type": "text",
+    "description": {
+      "en": "Links a flight to its actual trajectory (i.e., a sequence of track points), as determined by flight track surveillance data."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has actual route"
+    }
+  }, {
+    "id": "atm:hasCrewMember",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#hasCrewMember",
+    "type": "text",
+    "description": {
+      "en": "Links a flight to its crew members."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has crew member"
+    }
+  }, {
+    "id": "atm:hasNavElement",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#hasNavElement",
+    "type": "text",
+    "description": {
+      "en": "Links a container for a navigational element to the element contained."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has navigation element"
+    }
+  }, {
+    "id": "atm:hasNumericParameter",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#hasNumericParameter",
+    "type": "text",
+    "description": {
+      "en": "Links a container for a numerical parameter to the numerical parameter contained."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has numeric parameter"
+    }
+  }, {
+    "id": "atm:hasPlannedRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#hasPlannedRoute",
+    "type": "text",
+    "description": {
+      "en": "Links a flight to a version of its flight plan. (Which version gets stored is application-dependent.) There are multiple versions of the flight plan generated and then amended during the course of the flight, starting in the pre-flight timeframe and extending through to the termination of the flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "has planned route"
+    }
+  }, {
+    "id": "atm:heading",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#heading",
+    "type": "text",
+    "description": {
+      "en": "The aircraft heading at the track point: a number between 0.01 and 360.0 indicating the angular heading with respect to North."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "heading"
+    }
+  }, {
+    "id": "atm:impactingCondition",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#impactingCondition",
+    "type": "text",
+    "description": {
+      "en": "Indicates the reason for initiating the Ground Delay Program: weather, volume, runway, equipment, other."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "impacting condition"
+    }
+  }, {
+    "id": "atm:impactingConditionMessage",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#impactingConditionMessage",
+    "type": "text",
+    "description": {
+      "en": "A free-text descriptoin elaborating on the reason for initiating the Ground Delay Program."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "impacting condition message"
+    }
+  }, {
+    "id": "atm:implementationStatus",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#implementationStatus",
+    "type": "text",
+    "description": {
+      "en": "Indicates the enforcement status of the ReRoute advisory: RQD (required), RMD (recommended), PLN (planned for implementation), FYI (informational only)"
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "implementation status"
+    }
+  }, {
+    "id": "atm:includedFlights",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#includedFlights",
+    "type": "text",
+    "description": {
+      "en": "Links an aircraft flow to a specification of the flights included in the flow."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "included flights"
+    }
+  }, {
+    "id": "atm:includesAircraftClass",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#includesAircraftClass",
+    "type": "text",
+    "description": {
+      "en": "Indicates which class of aircraft the flights defined by this specification must employ: jet, prop, jet and prop, turbo, all."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "includes aircraft class"
+    }
+  }, {
+    "id": "atm:includesAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#includesAirport",
+    "type": "text",
+    "description": {
+      "en": "Links an airport specification to one of more airports. Any airport linked is included in the set of airports covered by this airport specification. This property allows for explicit specification of a list of specific airports; the property atm:includesAirportType allows for the the implicit specification of an entire class of airports."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "includes airport"
+    }
+  }, {
+    "id": "atm:includesAirportType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#includesAirportType",
+    "type": "text",
+    "description": {
+      "en": "Indicates which type of airports are included in the set of airports covered by this airport specification: all, US, CONUS, NonCONUS, International, Canadian. This property allows for the implicit specification of an entire class of airports; the property atm:includesAirport allows for the explicit specification of a list of specific airports."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "includes airport type"
+    }
+  }, {
+    "id": "atm:includesAirway",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#includesAirway",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one of more airways (routes). Any flight that traverses a linked airway is included in the set of flights covered by this flight specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "includes airway"
+    }
+  }, {
+    "id": "atm:includesFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#includesFix",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one of more navigation fixes. Any flight that traverses a linked fix is included in the set of flights covered by this flight specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "includes fix"
+    }
+  }, {
+    "id": "atm:includesFlight",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#includesFlight",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one of more flights. Any linked flight is included in the set of flights covered by this flight specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "includes flight"
+    }
+  }, {
+    "id": "atm:initiativeComments",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#initiativeComments",
+    "type": "text",
+    "description": {
+      "en": "Provides any specific comments on the traffic management initiative (TMI) made by the issuing authority (e.g., ATCSCC, ARTCC)."
+    },
+    "nodetype": "LITERAL"
+  }, {
+    "id": "atm:issuedDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#issuedDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the day when the traffic management initiative (TMI) was issued."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "issued day"
+    }
+  }, {
+    "id": "atm:issuedTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#issuedTime",
+    "type": "text",
+    "description": {
+      "en": "The time when the traffic management initiative (TMI) was issued."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "issued time"
+    }
+  }, {
+    "id": "atm:locatedInSector",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#locatedInSector",
+    "type": "text",
+    "description": {
+      "en": "Links a navigation fix to the airspace sector in which that fix is located."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "located in sector"
+    }
+  }, {
+    "id": "atm:maxFlowCapacity",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#maxFlowCapacity",
+    "type": "text",
+    "description": {
+      "en": "The absolute maximum controllable number of aircraft flowing through an airspace region per some interval of time under any air traffic conditions."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "max flow capacity"
+    }
+  }, {
+    "id": "atm:modeledArrivalRate",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#modeledArrivalRate",
+    "type": "text",
+    "description": {
+      "en": "Links a delay model used in defining a Ground Delay Program (GDP) or Ground Stop(GS) to a sequence of desired hourly aircraft arrival rates specified for the initiative."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "modeled arrival rate"
+    }
+  }, {
+    "id": "atm:modeledAverageDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#modeledAverageDelay",
+    "type": "text",
+    "description": {
+      "en": "The average flight delay specified when modeling a Ground Delay Program (GDP) or Ground Stop(GS)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "modeled average delay minutes"
+    }
+  }, {
+    "id": "atm:modeledBy",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#modeledBy",
+    "type": "text",
+    "description": {
+      "en": "Links a Ground Delay Program (GDP) or a Ground Stop (GS) to a representation of the model used to design that initiative. The model contains all relevant parameters used to create the initiative."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "modeled by"
+    }
+  }, {
+    "id": "atm:modeledMaximumDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#modeledMaximumDelay",
+    "type": "text",
+    "description": {
+      "en": "The maximum flight delay specified when modeling a Ground Delay Program (GDP) or Ground Stop(GS)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "modeled maximum delay minutes"
+    }
+  }, {
+    "id": "atm:modeledPopUpFactor",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#modeledPopUpFactor",
+    "type": "text",
+    "description": {
+      "en": "Links a delay model used in defining a Ground Delay Program (GDP) or Ground Stop(GS) to a sequence of desired hourly popup factors specified for the initiative. 'Popups' account for late-filing flights (unexpected/unplanned flights) when modeling delays as part of a traffic management initiative (TMI) design process."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "modeled pop up factor"
+    }
+  }, {
+    "id": "atm:modeledTotalDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#modeledTotalDelay",
+    "type": "text",
+    "description": {
+      "en": "The total flight delay specified when modeling a Ground Delay Program (GDP) or Ground Stop(GS)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "modeled total delay minutes"
+    }
+  }, {
+    "id": "atm:mustHaveDestination",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#mustHaveDestination",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to an airport specification describing the destination airports for the flights being specified. Any flight covered by the flight specification must have as its destination one of the airports covered by the airport specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "must have destination"
+    }
+  }, {
+    "id": "atm:mustHaveOrigin",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#mustHaveOrigin",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to an airport specification describing the originating airports for the flights being specified. Any flight covered by the flight specification must have as its origin one of the airports covered by the airport specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "must have origin"
+    }
+  }, {
+    "id": "atm:operatedBy",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#operatedBy",
+    "type": "text",
+    "description": {
+      "en": "Links a flight to its carrier airline."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "operated by"
+    }
+  }, {
+    "id": "atm:operatingCarrier",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#operatingCarrier",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to one or more carrier airline(s). Each flight covered by the specification must be operated by one of these carriers."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "operating carrier"
+    }
+  }, {
+    "id": "atm:operatingTimeInterval",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#operatingTimeInterval",
+    "type": "text",
+    "description": {
+      "en": "Links a flight specification to a time interval. Each flight covered by the specification must be airborne sometime during the time period specified by the interval."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "operating time interval"
+    }
+  }, {
+    "id": "atm:planFilingDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#planFilingDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the day when the flight plan was filed with the FAA."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "plan filing day"
+    }
+  }, {
+    "id": "atm:planFilingTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#planFilingTime",
+    "type": "text",
+    "description": {
+      "en": "The time that the flight plan was filed with the FAA."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "plan filing time"
+    }
+  }, {
+    "id": "atm:planGapAfterSequenceElementNumber",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#planGapAfterSequenceElementNumber",
+    "type": "text",
+    "description": {
+      "en": "Indicates the location of a gap in the flight plan due to non-parsable/uninterpretable elements in the flight plan string."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "plan gap after sequence element number"
+    }
+  }, {
+    "id": "atm:plannedArrivalDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#plannedArrivalDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the day that the flight is planned to arrive per the flight plan."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "planned arrival day"
+    }
+  }, {
+    "id": "atm:plannedArrivalTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#plannedArrivalTime",
+    "type": "text",
+    "description": {
+      "en": "The time that the flight is planned to arrive per the flight plan."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "planned arrival time"
+    }
+  }, {
+    "id": "atm:plannedDepartureDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#plannedDepartureDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the day that the flight is planned to depart per the flight plan."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "planned departure day"
+    }
+  }, {
+    "id": "atm:plannedDepartureTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#plannedDepartureTime",
+    "type": "text",
+    "description": {
+      "en": "The time that the flight is planned to depart per the flight plan."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "planned departure time"
+    }
+  }, {
+    "id": "atm:prevAverageDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#prevAverageDelay",
+    "type": "text",
+    "description": {
+      "en": "The average flight delay experienced prior to the start of a Ground Stop(GS)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "previous average delay minutes"
+    }
+  }, {
+    "id": "atm:prevMaximumDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#prevMaximumDelay",
+    "type": "text",
+    "description": {
+      "en": "The maximum flight delay experienced prior to the start of a Ground Stop(GS)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "previous maximum delay minutes"
+    }
+  }, {
+    "id": "atm:prevTotalDelay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#prevTotalDelay",
+    "type": "text",
+    "description": {
+      "en": "The total flight delay experienced prior to the start of a Ground Stop(GS)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "previous total delay minutes"
+    }
+  }, {
+    "id": "atm:publishedArrivalDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#publishedArrivalDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the day that the flight is planned to arrive per the OAG schedule."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "published arrival day"
+    }
+  }, {
+    "id": "atm:publishedArrivalTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#publishedArrivalTime",
+    "type": "text",
+    "description": {
+      "en": "The time that the flight is planned to arrive per the OAG schedule."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "published arrival time"
+    }
+  }, {
+    "id": "atm:publishedDepartureDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#publishedDepartureDay",
+    "type": "text",
+    "description": {
+      "en": "Links to the day that the flight is planned to depart per the OAG schedule."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "published departure day"
+    }
+  }, {
+    "id": "atm:publishedDepartureTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#publishedDepartureTime",
+    "type": "text",
+    "description": {
+      "en": "The time that the flight is planned to depart per the OAG schedule."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "published departure time"
+    }
+  }, {
+    "id": "atm:radialAngle",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#radialAngle",
+    "type": "text",
+    "description": {
+      "en": "The angle (in degrees) that defines the radial route's angular position with respect to the defined fix."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "radial angle"
+    }
+  }, {
+    "id": "atm:radialFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#radialFix",
+    "type": "text",
+    "description": {
+      "en": "Links to the fix through which the radial route passes."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "radial fix"
+    }
+  }, {
+    "id": "atm:reRouteConstraint",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reRouteConstraint",
+    "type": "text",
+    "description": {
+      "en": "Links a route segment specified as part of a ReRoute traffic management initiative (TMI) to a flight specification indicating which flights are permitted to follow the route segment."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "reroute constraint"
+    }
+  }, {
+    "id": "atm:reRoutePath",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reRoutePath",
+    "type": "text",
+    "description": {
+      "en": "Links a route segment alternative (specified as part of a ReRoute traffic management initiative) to its associated flight plan."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "re route path"
+    }
+  }, {
+    "id": "atm:reRouteReason",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reRouteReason",
+    "type": "text",
+    "description": {
+      "en": "Provides the reason for initiating a ReRoute: WEATHER , VOLUME , EQUIPMENT , RUNWAY/TAXIWAY , OTHER."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "reroute reason"
+    }
+  }, {
+    "id": "atm:reRouteSegmentType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reRouteSegmentType",
+    "type": "text",
+    "description": {
+      "en": "Indicates which type of ReRoute segment: origin , destination, origin-destination. A ReRoute segment can be a entire route between origin and destination, or a partial route leading from an origin or leading to a destination."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "re route segment type"
+    }
+  }, {
+    "id": "atm:reRouteTimeType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reRouteTimeType",
+    "type": "text",
+    "description": {
+      "en": "The time period associated with the reroute is specified in one of three ways. The reroute can apply to flights that: depart specified airports or centers during a certain time window (timeType=ETD); depart specified airports or centers to arrive at their destinations during a certain time window (timeType=ETA); or arrive at the boundary of a flow constrained area during a certain time window (timeType=FCA Flight List)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ReRoute time type"
+    }
+  }, {
+    "id": "atm:reRouteType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reRouteType",
+    "type": "text",
+    "description": {
+      "en": "The ReRoute type encodes information about the type of ReRoute being initiated or the reason for the ReRoute. One of the following: ROUTE , PLAYBOOK , CDR, SPECIAL OPERATIONS, NRP SUSPENSIONS, VS , NAT, SHUTTLE ACTIVITY, FCA, FEA, INFORMATIONAL, MISCELLANEOUS."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ReRoute type"
+    }
+  }, {
+    "id": "atm:referenceFix",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#referenceFix",
+    "type": "text",
+    "description": {
+      "en": "Links a relative fix to the absolute fix that serves as the basis for its location. (A relative fix position is defined relative to an absolute fix position, e.g. as a vector offset from the absolute fix.)"
+    },
+    "nodetype": "URI"
+  }, {
+    "id": "atm:relativeAngle",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#relativeAngle",
+    "type": "text",
+    "description": {
+      "en": "The angular direction in degrees (1-360) of a relative fix with respect to its defining absolute fix."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "relative angle"
+    }
+  }, {
+    "id": "atm:relativeDistance",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#relativeDistance",
+    "type": "text",
+    "description": {
+      "en": "The distance (in nautical miles) between a relative fix and its defining (absolute) fix."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "relative distance"
+    }
+  }, {
+    "id": "atm:reportingDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reportingDay",
+    "type": "text",
+    "description": {
+      "en": "A link between an aircraft track point and the day during which an en route aircraft traversed that point and reported its position, speed, and heading."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "reporting day"
+    }
+  }, {
+    "id": "atm:reportingTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#reportingTime",
+    "type": "text",
+    "description": {
+      "en": "The time when an en route aircraft passed through a trackpoint and reported its position, speed, and heading."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "reporting time"
+    }
+  }, {
+    "id": "atm:timeConstraintType",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#timeConstraintType",
+    "type": "text",
+    "description": {
+      "en": "Specifies the type of flight time being constrained in this flight specification: either ETA (estimated arrival time) or ETD (estimated departure time)."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "time constraint type"
+    }
+  }, {
+    "id": "atm:traconID",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#traconID",
+    "type": "text",
+    "description": {
+      "en": "Three letter FAA TRACON identifier code."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "tracon ID"
+    }
+  }, {
+    "id": "atm:traversesSIDSTAR",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#traversesSIDSTAR",
+    "type": "text",
+    "description": {
+      "en": "Links a SIDSTARtraverse (i.e., a specific route through a SID or STAR) to the specific SID or STAR being traversed by a given flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "traverses SIDSTAR"
+    }
+  }, {
+    "id": "atm:trueAirspeed",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#trueAirspeed",
+    "type": "text",
+    "description": {
+      "en": "The true airspeed of a flight: the speed of the aircraft relative to the airmass in which it is flying."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "true airspeed"
+    }
+  }, {
+    "id": "atm:userCategory",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#userCategory",
+    "type": "text",
+    "description": {
+      "en": "The type of airspace user that this flight represents: GA, Air Taxi, Cargo, Commercial, Military. Also used to constrain a flight specification to contain only flights representing a specific user category."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "user category"
+    }
+  }, {
+    "id": "atm:usesAirportRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#usesAirportRoute",
+    "type": "text",
+    "description": {
+      "en": "Links a SIDSTARtraverse (a path through a SID/STAR) to the airport route used in making the traverse."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "uses airport route"
+    }
+  }, {
+    "id": "atm:usesTransitionRoute",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#usesTransitionRoute",
+    "type": "text",
+    "description": {
+      "en": "Links a SIDSTARtraverse (a path through a SID/STAR) to the transition route used in making the traverse."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "uses transition route"
+    }
+  }, {
+    "id": "atm:withinARTCC",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#withinARTCC",
+    "type": "text",
+    "description": {
+      "en": "Links an airport specification to an ARTCC or ARTCC tier. Only airports within the ARTCC or ARTCC tier are covered by the specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "within ARTCC"
+    }
+  }, {
+    "id": "atm:withinAirportBoundingRegion",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#withinAirportBoundingRegion",
+    "type": "text",
+    "description": {
+      "en": "Links an airport specification to a circular geographic region. Only airports whose locations fall within this region satisfy the specification."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "within airport bounding region"
+    }
+  }, {
+    "id": "atm",
+    "type": "group",
+    "label": {
+      "en": "ATM schema"
+    },
+    "nodetype": "RESOURCE",
+    "items": ["atm:AbsoluteFix", "atm:ActualFlightRoute", "atm:AircraftCapacity", "atm:AircraftFlow", "atm:AircraftFlowCapacity", "atm:AircraftTrackPoint", "atm:AirportFix", "atm:AirportSpec", "atm:AirspaceFlowProgramTMI", "atm:AirspaceRouteSegment", "atm:CrewMember", "atm:DelayModel", "atm:FRDfix", "atm:Flight", "atm:FlightPlanSegment", "atm:FlightSpec", "atm:GDPmodel", "atm:GPSfix", "atm:GroundDelayProgramTMI", "atm:GroundStopTMI", "atm:IntersectionFix", "atm:LatLonFix", "atm:MeterFix", "atm:MilesInTrailTMI", "atm:NDBfix", "atm:NRSfix", "atm:NavElementContainer", "atm:NavaidFix", "atm:NavigationElement", "atm:NavigationFix", "atm:NavigationPath", "atm:NavigationSubPath", "atm:NumericParameterContainer", "atm:PlannedFlightRoute", "atm:PopupFactor", "atm:PopupFactorContainer", "atm:PopupFactorSequence", "atm:ProgramArrivalRate", "atm:ProgramArrivalRateContainer", "atm:ProgramArrivalRateSequence", "atm:ReRouteSegment", "atm:ReRouteTMI", "atm:RelativeFix", "atm:SIDSTARtraverse", "atm:TACANfix", "atm:TFMcontrolElement", "atm:Taxipath", "atm:TrafficManagementInitiative", "atm:VORfix", "atm:actualArrivalDay", "atm:actualArrivalTime", "atm:actualDepartureDay", "atm:actualDepartureTime", "atm:adlDay", "atm:adlTime", "atm:adsbID", "atm:advisoryNumber", "atm:aircraftCount", "atm:aircraftFix", "atm:aircraftFlown", "atm:aircraftTypeFlown", "atm:aircraftWeightCat", "atm:allowedRoute", "atm:alternateArrivalAirport", "atm:arrivalAirport", "atm:arrivalRunway", "atm:arrivalTaxiPath", "atm:callSign", "atm:controlledNASelement", "atm:cruisingAltitude", "atm:delayAssignmentMode", "atm:departureAirport", "atm:departureRunway", "atm:departureScope", "atm:departureTaxiPath", "atm:effectiveEndDay", "atm:effectiveEndTime", "atm:effectiveStartDay", "atm:effectiveStartTime", "atm:excludesARTCC", "atm:excludesAirport", "atm:excludesAirway", "atm:excludesFix", "atm:excludesFlight", "atm:exemptedAFP", "atm:extensionProbability", "atm:fixId", "atm:fixName", "atm:fixTrajectoryString", "atm:flightExclusionSpec", "atm:flightInclusionExclusion", "atm:flightInclusionSpec", "atm:flightPlanETA", "atm:flightRouteString", "atm:flowCapacity", "atm:flowMeasurementRegion", "atm:groundSpeed", "atm:hasActualRoute", "atm:hasCrewMember", "atm:hasNavElement", "atm:hasNumericParameter", "atm:hasPlannedRoute", "atm:heading", "atm:impactingCondition", "atm:impactingConditionMessage", "atm:implementationStatus", "atm:includedFlights", "atm:includesAircraftClass", "atm:includesAirport", "atm:includesAirportType", "atm:includesAirway", "atm:includesFix", "atm:includesFlight", "atm:initiativeComments", "atm:issuedDay", "atm:issuedTime", "atm:locatedInSector", "atm:maxFlowCapacity", "atm:modeledArrivalRate", "atm:modeledAverageDelay", "atm:modeledBy", "atm:modeledMaximumDelay", "atm:modeledPopUpFactor", "atm:modeledTotalDelay", "atm:mustHaveDestination", "atm:mustHaveOrigin", "atm:operatedBy", "atm:operatingCarrier", "atm:operatingTimeInterval", "atm:planFilingDay", "atm:planFilingTime", "atm:planGapAfterSequenceElementNumber", "atm:plannedArrivalDay", "atm:plannedArrivalTime", "atm:plannedDepartureDay", "atm:plannedDepartureTime", "atm:prevAverageDelay", "atm:prevMaximumDelay", "atm:prevTotalDelay", "atm:publishedArrivalDay", "atm:publishedArrivalTime", "atm:publishedDepartureDay", "atm:publishedDepartureTime", "atm:radialAngle", "atm:radialFix", "atm:reRouteConstraint", "atm:reRoutePath", "atm:reRouteReason", "atm:reRouteSegmentType", "atm:reRouteTimeType", "atm:reRouteType", "atm:referenceFix", "atm:relativeAngle", "atm:relativeDistance", "atm:reportingDay", "atm:reportingTime", "atm:timeConstraintType", "atm:traconID", "atm:traversesSIDSTAR", "atm:trueAirspeed", "atm:userCategory", "atm:usesAirportRoute", "atm:usesTransitionRoute", "atm:withinARTCC", "atm:withinAirportBoundingRegion"]
+  }]
+}

@@ -1,0 +1,16 @@
+/* .no-js [data-responsive-menu] ul {
+  display: none;
+}
+ */
+/* .card-body {
+  overflow-x: auto;
+} */
+
+.dropleft .dropdown-toggle::before {
+    display: none;
+}
+
+#blocker-search-btn {
+  left: 10px;
+  top: -6px;
+}

@@ -1,0 +1,2196 @@
+{
+	"https://data.nasa.gov/ontologies/atmonto/NAS#runwayWidthInFeet": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#float", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "runway width in feet", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The width in feet of the physical runway.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"_:g1-A0": {
+		"http://www.w3.org/2002/07/owl#onProperty": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#hasLastItem", "type": "uri" }
+		],
+		"http://www.w3.org/2002/07/owl#allValuesFrom": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft", "type": "uri" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Restriction", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#taxiwayID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "taxiway ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Taxiway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An identifier for the taxiway.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#TRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#RNAVroute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "T-Route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A low altitude RNAV airway route. (RNAV routes allow an aircraft to choose any course within a network of navigation beacons, rather than navigate directly to and from the beacons.)", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AviationServiceProvider", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Air carrier", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An entity that it licensed to operate aircraft.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An ordered sequence of navigation elements specifying a path through the airspace.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#dayOfMonth": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASday", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The day number associated with a day class.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#ARTCCtier": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "ARTCCtier", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A donut-shaped geographical area surrounding a designated central ARTCC. The first tier includes all the ARTCCs that share a boundary with the designated  ARTCC. The tier two ARTCCs includes the first tier ARTCCs plus those adjacent to the first tier ARCCCs. And so on.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#RNAVroute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#FederalAirway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "RNAV route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An RNAV (Random Navigation) route is defined relative to a network of existing ground-based navigation beacons.  RNAV allows an aircraft to choose any course within the network, rather than navigate using only point-to-point routes defined by the beacons.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#StandAloneWeatherStation": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "http://www.w3.org/2002/07/owl#Thing", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Stand-alone weather station", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A non-airport location where operational weather monitoring hardware is installed.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#calendarMonth": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASday", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The month number associated with a day class.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceLayer": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Airspace layer", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Represents a layer within the airspace, defined by a shear-sided polygon with specified low and high altitudes.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#locatedInCenter": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "located in Center", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links a sector to the ARTCC in which the sector is located.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AviationIndustryManufacturer": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AviationServiceProvider", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Aviation industry manufacturer", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A superclass encompassing the set of airframe and engine manufacturers.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#locatedInState": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Located in State", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The 2-letter US postal code for the state in which the airport is located.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#Sector": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Sector", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A defined volume in the the airspace of an ARTCC or TRACON whose flight traffic is typically controlled by a single controller.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasSTAR": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#STAR", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has STAR", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates an airport with the the STARs designated to route aircraft to that airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#QRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#RNAVroute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Q-Route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A high altitude RNAV airway route. (RNAV routes allow an aircraft to choose any course within a network of navigation beacons, rather than navigate directly to and from the beacons.)", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTaxiway": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Taxiway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has taxiway", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links an airport to a taxiway for that airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#tfmsMonitorAlertParameter": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "tfms monitor alert parameter", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The maximum number of aircraft permitted in a given sector at any time, per agreement between FAA and Air Traffic Controller union. MAP (Monitor Alert Parameter) is a TFMS input parameter.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirportServiceVehicle": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Airport service vehicle", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A class of vehicles that service the flights and maintain the airport physical infrastructure.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#countryOfRegistry": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "country of registry", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The country name of the airline registration.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasSectorName": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has sector name", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An alphanumeric sector name that is in general different than the sector ID.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#VORroute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#FederalAirway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "VOR route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A VOR route is defined relative to a network of existing ground-based VOR navigation beacons. VOR routes consist of point-to-point segments, where the points are defined by the beacons. More modern RNAV routes allow any path within the network, not limited to VOR-to-VOR segments.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#runwayMeasured": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#OperationalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "runway measured", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#RunwayVisibleRangeMeasurement", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Indicates which operational runway is being measured for visible range.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airCarrierName": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Air carrier name", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The official name of an air carrier.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#RefuelingTruck": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportServiceVehicle", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Refueling truck", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Vechicle that transports and pumps jet fuel to refuel aircraft.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"_:g1-A1": {
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+			{ "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil", "type": "uri" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+			{ "value": "TOWER", "type": "literal" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasSectorID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has sector ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A sector identifier that consists of the ARTCC identifier concatenated with a three-digit number. This identifier is in general different than the sector name.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#isInstrumentControlEligible": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#boolean", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "is instrument control eligible", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Indicates whether this airport is capable of an instrument approach.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#InternationalAirport": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "International airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The set of international (i.e., non-US) airports.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasSectorLayer": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceLayer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has sector layer", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links a sector to its vertically-stacked set of layers.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#date": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#date", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "date", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASday", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The date corresponding to the day represented by the day class. The value of this property is a date datatype. In contrast, the class represents the day conceptually as an object.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#NonCONUSairport": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#USairport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Non CONUS airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The set of airports located in the United States, but outside the contiguous lower 48 states.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasAirspaceLayerGeometry": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#ShearSidedPolygonalVolume", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has airspace layer geometry", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceLayer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links an airspace layer with a polygon describing its location in 3-space. A sector is composed of a sequence of layers, each of which is represented as a shear-sided polygonal volume.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#manufacturerCountryName": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "manufacturer country name", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The country name where the manufacturer is established.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airportLocation": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#PointLocation", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "airport location", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links to a geographic point designated as the airport location.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#DeicingTruck": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportServiceVehicle", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Deicing truck", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A vehicle that holds deicing fluid and pumping equipment to support deicing.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#touchdownPoint": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#PointLocation", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "touchdown point", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#OperationalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links to the geographical point location that is the touchdown spot on the operational runway.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airspaceLayerLowAltitude": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "airspace layer low altitude", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceLayer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The lower altitude bound of an airspace layer.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTower": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ATCT", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has tower", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links an airport to an air traffic control tower for that airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#CONUSairport": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#USairport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Continental US airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The set of airports in the continental US.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#ATCSCC": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "ATCSCC", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Air Traffic Control System Command Center (ATCSCC) facility", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hoursOffsetFromUTC": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "hours offset from UTC", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The number of hours that the airport is offset from the UTC timezone.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTier": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCCtier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has tier", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Asociates an ARTCC with the set of ARTCCs in its nth level tier.  Tier 1 includes the central ARTCC plus all ARTCCs immediately adjoining the central ARTCC; tier 2 includes tier 1 plus all adjacent ARTCCs two steps away from the central ARTCC. And so on.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#InverseFunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#RunwayVisibleRangeMeasurement": {
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "RVR measurement", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A measurement of the distance over which a pilot of an aircraft on the centerline of a runway can see the runway surface markings delineating the runway and its centerline. RVR (Runway Visible Range) is expressed as an interval specifying the minimum and maximum number of feet visible.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "http://www.w3.org/2002/07/owl#Thing", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Airport infrastructure component", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Part of an airport's physical infrastructure, including gates, terminals, runways, taxiways, etc.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#routeID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "route ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "FAA alphanumeric identifier assigned to the route/airway.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility", "type": "uri" },
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "ARTCC", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Air Route Traffic Control Center (ARTCC or 'Center') facility", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "http://www.w3.org/2002/07/owl#Thing", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Airspace infrastructure component", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A defined substructure of the airspace used to manage air traffic, including sectors, SIDs, STARs, routes, etc.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#OperationalRunway": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Operational runway", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An operational runway is a named runway one used in airport operations. There are two operational runways corresponding to one physical runway; these operational runways are 180 degrees apart.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#calendarYear": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASday", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The calendar year associated with a day class.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasRunway": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has runway", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links an airport to a physical runway for that airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONid": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has TRACON ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#TRACON", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The FAA alphanumeric code for the TRACON.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#RadialRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Radial Route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A route that follows a specified radial path emanating from a given fix.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#withinARTCC": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "within ARTCC", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links the airport to the ARTCC within which it is located.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#artccID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "artcc ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The 3-letter ARTCC (Air Route Traffic Control Center) code.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airportName": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "airport name", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The official name of the airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#deicingPadLocation": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#Polygonal2DRegion", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "deicing pad location", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#DeicingPad", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links a deicing pad with its location as a two-dimensional bounding polygon.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AviationIndustryManufacturer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Airframe manufacturer", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A manufacturer of physical aircraft.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTerminal": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Terminal", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has terminal", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links an airport to a terminal for that airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#runwayLengthInFeet": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#float", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "runway length in feet", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The length in feet of the physical runway.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"_:g1-A2": {
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+			{ "value": "_:g1-A3", "type": "bnode" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONname": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has TRACON name", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#TRACON", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The common name for the TRACON.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#withinTimezone": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "within timezone", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The timezone identifier for the airport, where the timezone is specified as Area/Location, e.g. America/New_York.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasCenterGeometry": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#Polygonal2DRegion", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has center geometry", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links an ARTCC to a 2-dimensional bounding polygon.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasQueue": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#DeicingQueue", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has queue", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#DeicingPad", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links a deicing pad to its queue of aircraft waiting to be deiced.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#USairport": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "USairport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The set of airports located in the United States.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#Terminal": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Terminal", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A structure on the airport surface that serves as an interface between people, baggage, and aircraft.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#GovernmentAviationServiceProvider": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AviationServiceProvider", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Government aviation service provider", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The set of govenment agencies that perform aviation services.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#associatedOpRunway": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#OperationalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "associated operational runway", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates a physical runway with its two operational runways (180 degrees apart, representing approaches from either end of the physical runway).", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#icaoCarrierCode": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "ICAO Air Carrier Code", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The three-letter ICAO code assigned to the airline carrier.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#minVisibility": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "min visibility", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#RunwayVisibleRangeMeasurement", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The lower bound of visibility in feet over the centerline of the runway.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airlineCallsign": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "airline callsign", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The radio call sign associated with an the air carrier. Used by pilots and controllers to identify aircraft over radio frequencies.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS": {
+		"http://www.w3.org/2002/07/owl#versionInfo": [
+			{ "value": "Created with TopBraid Composer", "type": "literal" }
+		],
+		"http://www.w3.org/2002/07/owl#imports": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/equipment", "type": "uri" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Ontology", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#manufacturerFullName": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "manufacturer full name", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirframeManufacturer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The full name of the manufacturer.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#TransitionRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTARroute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Transition route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A route within a SID or STAR that feeds aircraft into or out from the common route of the SID/STAR. In other words, the transition route is a feeder route from the en route segment of a flight into the heart of a STAR for arrival; or an exit route from a SID funneling flights to their appropriate initial jet routes for the en route segment of flight.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONlayer": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceLayer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has TRACON layer", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#TRACON", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A link between the TRACON and its geographic extent, represented as a single shear-sided polygonal volume.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#NASday": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "http://www.w3.org/2002/07/owl#Thing", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "NAS day", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A class that represents a day of the year. Events, such as flights, weather forecasts, and other events are linked to the instance of the day they occurred.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#departureRouteAirport": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "departure route airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links to the airport from which this route is destined.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#sidstarID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "sidstar ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The FAA identifier for the SID or STAR. Typically, but not uniformly, 5 alpha characters plus a revision digit.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#includesARTCC": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCC", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "includes ARTCC", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCCtier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A link between an ARTCC tier and the ARTCCs included in the tier.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#isWeatherReportingStation": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#boolean", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "is weather reporting station", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Indicates whether this airport is a METAR weather reporting station.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#CanadianAirport": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#InternationalAirport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Canadian airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The set of Canadian airports.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airCarrierAlias": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "air carrier alias", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An alternative name for an air carrier.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#STAR": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Standard Arrival Route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A STAR (Standard Terminal Arrival Route) is an air traffic control coded arrival route established for application to arriving IFR (Instrument Flight Rules) aircraft destined for certain airports.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#DeicingPad": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Deicing pad", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A physical location in the airport where deicing is performed.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasSID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SID", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has SID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates an airport with the the SIDs designated to route aircraft from that airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#JetRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#VORroute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Jet route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A high altitude airway based on ground-based VOR sensor locations.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airspaceLayerHighAltitude": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "airspace layer high altitude", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceLayer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The upper altitude bound of an airspace layer.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasCommonRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#CommonRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has common route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates a common route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#Airport": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A facility where regularly-scheduled aircraft arrive and depart.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#arrivalRouteAirport": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "arrival route airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links to the airport for which this route is destined.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#gateID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "gate ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Gate", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The gate identifier assigned by the airport authority.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#airportBoundary": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#Polygonal2DRegion", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "airport boundary", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links an airport to a representation of its perimeter boundary.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"_:g1-A4": {
+		"http://www.w3.org/2002/07/owl#oneOf": [
+			{ "value": "_:g1-A5", "type": "bnode" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2000/01/rdf-schema#Datatype", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#maxVisibility": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "max visibility", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#RunwayVisibleRangeMeasurement", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The upper bound of visibility in feet over the centerline of the runway.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#taxiwayFootprint": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#Polygonal2DRegion", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "taxiway location", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Taxiway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates a taxiway with its bounding two-dimensional rectangle.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasLOAwith": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has LOA with", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "This property links a NAS facility to another NAS facility when there is a letter of agreement (LOA) in place between them.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#SymmetricProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#iataAirportCode": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "IATA Airport Code", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The thre-letter IATA code assigned to the airport. Contrast with the ICAO and FAA airport codes.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTransitionRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#TransitionRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has transition route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates a transition route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#tierLevel": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#integer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "tier level", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ARTCCtier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The degree number of the ARTCC tier. Tier 1 includes the central ARTCC plus all ARTCCs immediately adjoining the central ARTCC; tier 2 includes tier 1 plus all adjacent ARTCCs two steps away from the central ARTCC. And so on.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#RampTower": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Ramp tower", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A control tower from which ramp controllers guide aircraft movements as they enter and exit the taxiways, and arrive and leave the gates. The ramp is the area of the airport surface where planes, service vehicles, and people meet.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#startingTime": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#time", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "starting time", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NAShour", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The beginning of the hour stored as a datetime value.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#Taxiway": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#SequencedItem", "type": "uri" },
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Taxiway", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An airport surface leading that connects the ramp area (i.e., the area in the vicinity of the gates) with the runways.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AirportRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTARroute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Airport route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A route within a SID or STAR that connects the common route to one of multiple airports that use the SID/STAR.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"_:g1-A5": {
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+			{ "value": "_:g1-A1", "type": "bnode" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+			{ "value": "TRACON", "type": "literal" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasRampTower": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#RampTower", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has ramp tower", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Terminal", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates an airport terminal with a ramp tower that controlls the aircraft and vehicle traffic in the vicinity of that terminal.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Physical Runway", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A physical runway, defined as a delimited rectangular surface region of the airport. Each physical runway is associated with two operational runways, 180 degrees apart.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONstate": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has TRACONstate", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#TRACON", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The name of the US state in which the TRACON command center is located.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "SIDSTAR", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A superclass of SID and STAR defining the properties shared by both, specifically the set of common, airport, and transition routes that comprise the SID/STAR.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasGate": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Gate", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has gate", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Terminal", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates an airport terminal with a aircraft gate located at that terminal.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"_:g1-A6": {
+		"http://www.w3.org/2002/07/owl#unionOf": [
+			{ "value": "_:g1-A2", "type": "bnode" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#DeicingQueue": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "_:g1-A7", "type": "bnode" },
+			{ "value": "_:g1-A0", "type": "bnode" },
+			{ "value": "_:g1-A8", "type": "bnode" },
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#Sequence", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Deicing queue", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An ordered sequence of aircraft awaiting deicing at a deicing pad.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#SID": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Standard Instrument Departure", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A SID (Standard Instrument Departure) is an air traffic control coded departure procedure that has been established at certain airports to simplify clearance delivery procedures.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "http://www.w3.org/2002/07/owl#Thing", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "NAS facility", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The set of FAA and airport facilities involved in operational air traffic management.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#Gate": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Gate", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A physical interface between the aircraft and the terminal, used to board passengers and crew.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AviationServiceProvider": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "http://www.w3.org/2002/07/owl#Thing", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Aviation service provider", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A superclass encompassing all entities that provide aviation services in the public and private sectors.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#VictorRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#VORroute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Victor route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A low altitude airway based on ground-based VOR sensor locations.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#AircraftEngineManufacturer": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AviationIndustryManufacturer", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Aircraft engine manufacturer", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A manufacturer of aircraft engines.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#adjacentSector": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "adjacent sector", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Sector", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Links a sector to an immediately adjacent sector that shares a boundary.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#terminalID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "terminal ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Terminal", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The alphanumeric identifier of the airport terminal.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#iataCarrierCode": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "IATA Carrier Code", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirCarrier", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The two-letter IATA code assigned to the carrier.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#NAShour": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "http://www.w3.org/2002/07/owl#Thing", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "NAShour", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A class that represents an hour within a day. Events, such as flights, weather forecasts, and other events are linked to the instance of the day they occurred.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#ATCT": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility", "type": "uri" },
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "ATCT", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Air Traffic Control Tower (ATCT) facility", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTARroute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "SIDSTARroute", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "A route that defines a SID or STAR.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"_:g1-A7": {
+		"http://www.w3.org/2002/07/owl#onProperty": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#hasSequencedItem", "type": "uri" }
+		],
+		"http://www.w3.org/2002/07/owl#allValuesFrom": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft", "type": "uri" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Restriction", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#associatedAirport": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "associated airport", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates some component of airport infrastructure (runway, terminal, tower, etc.) with its airport.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#towerID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "tower ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#ATCT", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The FAA identifier for air traffic control tower.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#TRACON": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "_:g1-A9", "type": "bnode" },
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#NASfacility", "type": "uri" },
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceInfrastructureComponent", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "TRACON", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Terminal Radar Approach Control (TRACON) facility", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#faaAirportCode": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "FAA airport code", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The alphanumeric FAA code of lenth 3 or 4 for the airport. Contrasted with the ICAO and IATA codes, which in general are different. Often the IATA and FAA codes are identical.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#FederalAirway": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirspaceRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Federal airway", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An airspace route that is defined by FAA and can be filed as part of a flight plan: a jet route, a Q-route,  a T-Route, a Victor route.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#icaoAirportCode": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "ICAO airport code", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#Airport", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The four-letter ICAO code assignied to the airport. Contrast with the IATA and FAA airport codes.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONcity": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has TRACONcity", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#TRACON", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The city name where the TRACON command center is located.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"_:g1-A9": {
+		"http://www.w3.org/2002/07/owl#onProperty": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONtype", "type": "uri" }
+		],
+		"http://www.w3.org/2002/07/owl#allValuesFrom": [
+			{ "value": "_:g1-A4", "type": "bnode" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Restriction", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#CommonRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTARroute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "Common route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The backbone portion of a SID or STAR that is flown by all aircraft.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Class", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasAirportRoute": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#AirportRoute", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has airport route", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#SIDSTAR", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates an airport route with a SID or STAR. A SID or STAR has a single common route, but can have multiple airport or transition routes.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#hasTRACONtype": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "has TRACONtype", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#TRACON", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "The type of TRACON: Tower-colocated TRACON or standalone TRACON.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#runwayFootprint": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#Polygonal2DRegion", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "runway footprint", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#PhysicalRunway", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "Associates a physical runway with its bounding two-dimensional rectangle.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#ObjectProperty", "type": "uri" },
+			{ "value": "http://www.w3.org/2002/07/owl#FunctionalProperty", "type": "uri" }
+		]
+	},
+	"_:g1-A3": {
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+			{ "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil", "type": "uri" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/NAS#OperationalRunway", "type": "uri" }
+		]
+	},
+	"https://data.nasa.gov/ontologies/atmonto/NAS#runwayID": {
+		"http://www.w3.org/2000/01/rdf-schema#range": [
+			{ "value": "http://www.w3.org/2001/XMLSchema#string", "type": "uri" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#label": [
+			{ "value": "runway ID", "type": "literal" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#domain": [
+			{ "value": "_:g1-A6", "type": "bnode" }
+		],
+		"http://www.w3.org/2000/01/rdf-schema#comment": [
+			{ "value": "An identifier for the runway. For physical runways, the convention is to label runways by their heading, dropping the last digit. E.g. for Liverpool, runway 9/27 is facing approximately magnetic heading 90 degrees in one direction, and 270 degrees in the opposite direction. If an airport has parallel runways, these would then be marked Left, Center and Right, e.g. 9L, 9C, 9R. For operational runways, the runway identifiers specifies one direction only: either 9 or 27 in the Liverpool example.", "type": "literal" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#DatatypeProperty", "type": "uri" }
+		]
+	},
+	"_:g1-A8": {
+		"http://www.w3.org/2002/07/owl#onProperty": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/general#hasFirstItem", "type": "uri" }
+		],
+		"http://www.w3.org/2002/07/owl#allValuesFrom": [
+			{ "value": "https://data.nasa.gov/ontologies/atmonto/equipment#Aircraft", "type": "uri" }
+		],
+		"http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+			{ "value": "http://www.w3.org/2002/07/owl#Restriction", "type": "uri" }
+		]
+	}
+}

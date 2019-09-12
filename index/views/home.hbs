@@ -1,0 +1,67 @@
+<div class="container mt-4" id="rdforms-home-container">
+  <div class="row justify-content-md-center">
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-header">
+          <p class="text-secondary lead">Flight Report</p>
+        </div>
+        <div class="card-body">
+          <form id="rdforms-query-form" action="/report" method="POST">
+            <!-- callsign -->
+            <div class="form-group">
+              <label class="bmd-label-floating" for="callSign">Flight Callsign</label>
+              <select class="form-control rdforms-query-input" id="call-sign-select" name="callSign">
+                {{#each callSign}}
+                  {{#if this.callSign}}
+                    <option value="{{{this.callSign.value}}}">{{{this.callSign.value}}}</option>
+                  {{/if}}
+                {{/each}}
+              </select>
+            </div>
+            <!-- arrival airport -->
+            <div class="form-group">
+              <label class="bmd-label-floating" for="airrvalAirport">Airrval Airport</label>
+              <select class="form-control rdforms-query-input" id="arrival-airport-select" name="airrvalAirport">
+                {{#each airportName}}
+                  {{#if this.airportName}}
+                    <option value="{{{this.airportName.value}}}">{{{this.airportName.value}}}</option>
+                  {{/if}}
+                {{/each}}
+              </select>
+            </div>
+            <!-- arrival day -->
+            <div class="form-group">
+              <label for="actual-arrival-day">Arrival Day</label>
+              <input type="date" class="form-control rdforms-query-input datetimepicker" id="actual-arrival-day-datetimepicker" name="actual-actual-day">
+              <!-- <select class="form-control" name="flight-date">
+                {{#each nasdate}}
+                  {{#if this.nasdate}}
+                    <option value="{{{this.nasdate.value}}}">{{{this.nasdate.value}}}</option>
+                  {{/if}}
+                {{/each}}
+              </select> -->
+            </div>
+            <!-- departure airport -->
+            <div class="form-group">
+              <label class="bmd-label-floating" for="departureAirport">Departure Airport</label>
+              <select class="form-control rdforms-query-input" id="departure-airport-select" name="departureAirport">
+                {{#each airportName}}
+                  {{#if this.airportName}}
+                    <option value="{{{this.airportName.value}}}">{{{this.airportName.value}}}</option>
+                  {{/if}}
+                {{/each}}
+              </select>
+            </div>
+            <!-- departure day -->
+            <div class="form-group">
+              <label for="actual-departure-day">Departure Day</label>
+              <input type="date" class="form-control rdforms-query-input datetimepicker" id="actual-departure-day-datetimepicker" name="actual-departure-day">
+            </div>
+            <button type="submit" class="btn btn-raised btn-primary" id="rdforms-query-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="module" src="index/public/js/rdforms-home.js"></script>

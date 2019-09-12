@@ -1,0 +1,262 @@
+{
+  "root": "blocker",
+  "label": {
+    "en": "blocker report"
+  },
+  "description": {
+    "en": "A schema describes a structure of a blocker report."
+  },
+  "templates": [{
+    "id": "ex:blocker",
+    "property": "http://example.org/ex#blocker",
+    "label": {
+      "en": "A blocker report document"
+    },
+    "description": {
+      "en": "A node wrapping resources about a blocker report"
+    },
+    "type": "text",
+    "nodetype": "URI"
+  }, {
+    "id": "dcterms:title",
+    "property": "http://purl.org/dc/terms/title",
+    "label": {
+      "en": "Title",
+      "sv": "Titel",
+      "de": "Titel",
+      "nb": "Tittel",
+      "da": "Titel"
+    },
+    "description": {
+      "en": "A name given to the resource."
+    },
+    "type": "text",
+    "nodetype": "LANGUAGE_LITERAL",
+    "cardinality": {
+      "min": 1,
+      "pref": 1
+    }
+  }, {
+    "id": "dcterms:creator",
+    "property": "http://purl.org/dc/terms/creator",
+    "label": {
+      "en": "Creator",
+      "sv": "Skapare",
+      "de": "Urheber"
+    },
+    "description": {
+      "en": "An entity primarily responsible for making the resource."
+    },
+    "constraints": {
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "http://purl.org/dc/terms/Agent"
+    },
+    "type": "text",
+    "nodetype": "LITERAL",
+    "cardinality": {
+      "min": 0,
+      "pref": 1
+    }
+  }, {
+    "id": "atm:callSign",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#callSign",
+    "label": {
+      "en": "call sign"
+    },
+    "description": "The flight model",
+    "type": "text",
+    "nodetype": "LITERAL"
+  }, {
+    "id": "atm:actualArrivalDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalDay",
+    "label": {
+      "en": "actual arrival day"
+    },
+    "description": "Links a flight with the day on which the flight arrives. This is the day determined by surveillance data sources to be the 'actual' day of arrival, versus the scheduled day or the day specified in the flight plan, etc.",
+    "type": "text",
+    "nodetype": "URI"
+  }, {
+    "id": "atm:actualArrivalTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalTime",
+    "label": "actual arrival time",
+    "description": {
+      "en": "The time determined by surveillance data sources to be the 'actual' time of flight arrival, versus the scheduled time or the time specified in the flight plan, etc."
+    },
+    "type": "text",
+    "nodetype": "LITERAL"
+  }, {
+    "id": "atm:actualDepartureDay",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureDay",
+    "label": {
+      "en": "actual departure day"
+    },
+    "description": "Links a flight with the day on which the flight departures. This is the day determined by surveillance data sources to be the 'actual' day of arrival, versus the scheduled day or the day specified in the flight plan, etc.",
+    "type": "text",
+    "nodetype": "URI"
+  }, {
+    "id": "atm:actualDepartureTime",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureTime",
+    "label": "actual departure time",
+    "description": {
+      "en": "The time determined by surveillance data sources to be the 'actual' time of flight departure, versus the scheduled time or the time specified in the flight plan, etc."
+    },
+    "type": "text",
+    "nodetype": "LITERAL"
+  }, {
+    "id": "atm:arrivalAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#arrivalAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the actual arrival airport for the flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "arrival airport"
+    }
+
+  }, {
+    "id": "atm:departureAirport",
+    "property": "https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport",
+    "type": "text",
+    "description": {
+      "en": "Links to the actual departure airport for the flight."
+    },
+    "nodetype": "URI",
+    "label": {
+      "en": "departure airport"
+    }
+  }, {
+    "id": "nas:faaAirportCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#faaAirportCode",
+    "label": {
+      "en": "FAA airport code"
+    },
+    "description": {
+      "en": "The alphanumeric FAA code of lenth 3 or 4 for the airport. Contrasted with the ICAO and IATA codes, which in general are different. Often the IATA and FAA codes are identical."
+    },
+    "type": "text",
+    "nodetype": "LITERAL"
+  }, {
+    "id": "nas:iataAirportCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#iataAirportCode",
+    "label": {
+      "en": "IATA Airport Code"
+    },
+    "description": {
+      "en": "The thre-letter IATA code assigned to the airport. Contrast with the ICAO and FAA airport codes."
+    },
+    "type": "text",
+    "nodetype": "LITERAL"
+  }, {
+    "id": "nas:icaoAirportCode",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#icaoAirportCode",
+    "type": "text",
+    "description": {
+      "en": "The four-letter ICAO code assignied to the airport. Contrast with the IATA and FAA airport codes."
+    },
+    "nodetype": "LITERAL",
+    "label": {
+      "en": "ICAO airport code"
+    }
+  }, {
+    "id": "nas:airportName",
+    "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airportName",
+    "label": {
+      "en": "airport name"
+    },
+    "description": "The official name of the airport.",
+    "type": "text",
+    "nodetype": "LITERAL"
+  }, {
+    "id": "dcterms:subject",
+    "property": "http://purl.org/dc/terms/subject",
+    "label": {
+      "en": "Subject",
+      "sv": "Ämne",
+      "de": "Thema"
+    },
+    "description": {
+      "en": ""
+    },
+    "type": "choice",
+    "nodetype": "URI",
+    "cardinality": {
+      "min": 0,
+      "pref": 1
+    }
+  }, {
+    "id": "dcterms:description",
+    "property": "http://purl.org/dc/terms/description",
+    "label": {
+      "en": "Description",
+      "sv": "Beskrivning",
+      "de": "Beschreibung",
+      "nb": "Beskrivelse",
+      "da": "Beskrivelse"
+    },
+    "description": {
+      "en": "A problem description of a blocker report"
+    },
+    "type": "text",
+    "nodetype": "LANGUAGE_LITERAL",
+    "styles": [
+      "multiline"
+    ]
+  }, {
+    "id": "dcterms:identifier",
+    "property": "http://purl.org/dc/terms/identifier",
+    "label": {
+      "en": "Identifier",
+      "sv": "Identifierare",
+      "de": "Kennzeichnung"
+    },
+    "description": {
+      "en": "An unambiguous reference to the resource within a given context."
+    },
+    "type": "text",
+    "nodetype": "ONLY_LITERAL",
+    "cardinality": {
+      "min": 0,
+      "pref": 1
+    }
+  }, {
+    "id": "dcterms:created",
+    "property": "http://purl.org/dc/terms/created",
+    "label": {
+      "en": "Date created",
+      "sv": "Skapelsedatum",
+      "de": "Erstellungsdatum",
+      "da": "Dato for oprettelse"
+    },
+    "description": {
+      "en": "Date of creation of a blocker report.",
+      "sv": "Datum då resursen har skapats."
+    },
+    "type": "text",
+    "nodetype": "DATATYPE_LITERAL",
+    "datatype": "http://www.w3.org/2001/XMLSchema#date"
+  }, {
+    "id": "blocker",
+    "type": "group",
+    "label": {
+      "en": "blocker report schema group"
+    },
+    "nodetype": "RESOURCE",
+    "items": [
+      "ex:blocker",
+      "dcterms:title",
+      "dcterms:creator",
+      "dcterms:created",
+      "dcterms:description",
+      "atm:callSign",
+      "atm:actualArrivalDay",
+      "atm:actualDepartureDay",
+      "atm:arrivalAirport",
+      "atm:departureAirport",
+      "nas:faaAirportCode",
+      "nas:iataAirportCode",
+      "nas:icaoAirportCode",
+      "nas:airportName",
+      "dcterms:identifier"
+    ]
+  }]
+}

@@ -1,0 +1,96 @@
+{
+  "root": "aviation",
+  "label": { "en": "aviation schema" },
+  "description": { "en": "to be continued" },
+  "templates": [
+    {
+      "id": "atm:Flight",
+      "property": "https://data.nasa.gov/ontologies/atmonto/ATM#Flight",
+      "label": { "en": "Flight", },
+      "description": "A single flight segment from origin to destination",
+      "type": "text",
+      "nodetype": "URI"
+    }, {
+      "id": "atm:callSign",
+      "property": "https://data.nasa.gov/ontologies/atmonto/ATM#callSign",
+      "label": { "en": "call sign", },
+      "description": "The flight identifier",
+      "type": "text",
+      "nodetype": "LITERAL"
+    }, {
+      "id": "atm:arrivalAirport",
+      "property": "https://data.nasa.gov/ontologies/atmonto/ATM#arrivalAirport",
+      "label": { "en": "arrival airport", },
+      "description": "Links to the actual arrival airport for the flight.",
+      "type": "text",
+      "nodetype": "URI"
+    }, {
+      "id": "atm:departureAirport",
+      "property": "https://data.nasa.gov/ontologies/atmonto/ATM#departureAirport",
+      "label": { "en": "departure airport" },
+      "description": "Links to the actual departure airport for the flight.",
+      "type": "text",
+      "nodetype": "URI"
+    }, {
+      "id": "atm:actualArrivalDay",
+      "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualArrivalDay",
+      "label": { "en": "actual arrival day" },
+      "description": "Links a flight with the day on which the flight arrives. This is the day determined by surveillance data sources to be the 'actual' day of arrival, versus the scheduled day or the day specified in the flight plan, etc.",
+      "type": "text",
+      "nodetype": "URI"
+    }, {
+      "id": "atm:actualDepartureDay",
+      "property": "https://data.nasa.gov/ontologies/atmonto/ATM#actualDepartureDay",
+      "label": { "en": "actual arrival day" },
+      "description": "Links a flight with the day on which the flight departures. This is the day determined by surveillance data sources to be the 'actual' day of arrival, versus the scheduled day or the day specified in the flight plan, etc.",
+      "type": "text",
+      "nodetype": "URI"
+    }, {
+      "id": "atm:operatedBy",
+      "property": "https://data.nasa.gov/ontologies/atmonto/ATM#operatedBy",
+      "label": { "en": "operated by" },
+      "description": "Links a flight to its carrier airline.",
+      "type": "text",
+      "nodetype": "URI"
+    },
+
+    {
+      "id": "dc:title",
+      "property": "http://purl.org/dc/terms/title",
+      "label": { "en": "Title" },
+      "description": "A short title of the resource",
+      "type": "text",
+      "nodetype": "LITERAL"
+    }, {
+      "id": "nas:airportName",
+      "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airportName",
+      "label": { "en": "airport name" },
+      "description": "The official name of the airport.",
+      "type": "text",
+      "nodetype": "LITERAL"
+    }, {
+      "id": "nas:airCarrierName",
+      "property": "https://data.nasa.gov/ontologies/atmonto/NAS#airCarrierName",
+      "label": { "en": "Air carrier name" },
+      "description": "The official name of an air carrier.",
+      "type": "text",
+      "nodetype": "LITERAL"
+    }, {
+      "id": "rdfs:label",
+      "property": "http://www.w3.org/2000/01/rdf-schema#label",
+      "label": { "en": "label" },
+      "description": "A human-readable name for the subject.",
+      "type": "text",
+      "nodetype": "LITERAL"
+    }, {
+      "id": "aviation",
+      "type": "group",
+      "label": { "en": "aviation schema group" },
+      "nodetype": "RESOURCE",
+      "items": [
+        "atm:Flight"
+      ]
+    }
+  ],
+  "cachedChoices": {}
+}

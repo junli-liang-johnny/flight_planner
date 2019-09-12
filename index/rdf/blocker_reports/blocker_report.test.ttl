@@ -1,0 +1,17 @@
+@prefix ex: <http://example.org/ex#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix atm: <https://data.nasa.gov/ontologies/atmonto/ATM#>.
+@prefix nas: <https://data.nasa.gov/ontologies/atmonto/NAS#>.
+
+ex:blockerReport-2019-7-1_14:14:20 a ex:blocker;
+    dcterms:title "Flight issue on Moday";
+    atm:callSign "flight model";
+    atm:actualArrivalDay "2019-07-20";
+    atm:actualArrivalTime "undefined";
+    atm:actualDepartureDay "2019-07-19";
+    atm:actualDepartureTime "undefined";
+    nas:iataAirportCode "NAS";
+    nas:airportName "airportName";
+    dcterms:description "The flight on Monday had a launching issue. Please a engineer can fix it very soon.";
+    dcterms:identifier "blockerReport-2019-7-1_14:14:20";
+    dcterms:created "2019-7-1_14:14:20".
