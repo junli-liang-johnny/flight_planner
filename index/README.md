@@ -29,4 +29,4 @@ Fix the css issues conflict with latest version of Bootstrap by comment out the 
 
 ## Project introduction and report
 - [Introduction slides](https://drive.google.com/open?id=1Hu0tmkx5U1RkMI_QhqYyO27pj9ichIK5)
-- [Paper](https://drive.google.com/open?id=1Hu0tmkx5U1RkMI_QhqYyO27pj9ichIK5)
+- [Paper](https://drive.google.com/open?id=122j-d-AjkpiMVHZuKYBilBzSdWFv55wM)
