@@ -1,3 +1,6 @@
+# Note
+Below is the external js library used in the `Flight Planner` project. The src of the project is under [`flight_planner/index`](https://github.com/diaopk/flight_planner/tree/master/index).
+
 # RDForms
 
 RDForms ("RDF Forms") is a JavaScript library that provides a way to declarative describe how editors and presentation
