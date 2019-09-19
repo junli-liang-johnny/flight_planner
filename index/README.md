@@ -29,7 +29,12 @@ Fix the css issues conflict with latest version of Bootstrap by comment out the 
 - Line 96549
 
 ## Screenshots
-![Flight Query Form](./screenshots/Screenshot 2019-07-26 at 21.00.11.png =250x)
+<p float="left">
+  <img src="./screenshots/Screenshot%202019-07-26%20at%2021.00.11.png" width="220" height="400" />
+  <img src="./screenshots/Screenshot%202019-07-26%20at%2021.01.07.png" width="220" height="400" />
+  <img src="./screenshots/Screenshot 2019-07-26 at 21.01.49.png" width="220" height="400" />
+  <img src="./screenshots/Screenshot 2019-07-26 at 21.02.36.png" width="220" height="400" />
+ </p>
 
 ## Project introduction and report
 - [Introduction slides](https://drive.google.com/open?id=1Hu0tmkx5U1RkMI_QhqYyO27pj9ichIK5)
