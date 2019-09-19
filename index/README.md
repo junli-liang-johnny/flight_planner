@@ -2,7 +2,8 @@ The project uses the RDForms.js which are files in `/flight_planner` and the pro
 
 ## How to run
 `pwd`: `/Users/.../flight_planner`
-- `fuseki-server`: run the database
+- intsall [`Apaceh Jena Fuseki`](https://jena.apache.org/download/index.cgi) if you haven't 
+- `fuseki-server`: run the command under directory `/Users/.../flight_planner` to activate the database
 - `node index/app.js`: run the app
 - Go to `localhost:3000`
 
