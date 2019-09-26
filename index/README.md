@@ -36,6 +36,9 @@ Fix the css issues conflict with latest version of Bootstrap by comment out the 
   <img src="./screenshots/Screenshot 2019-07-26 at 21.02.36.png" width="220" height="400" />
  </p>
 
+## Demo video
+[Link](https://www.youtube.com/watch?v=w43w-xUsKb0)
+
 ## Project introduction and report
 - [Introduction slides](https://drive.google.com/open?id=1Hu0tmkx5U1RkMI_QhqYyO27pj9ichIK5)
 - [Paper](https://drive.google.com/open?id=122j-d-AjkpiMVHZuKYBilBzSdWFv55wM)
