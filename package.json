@@ -21,7 +21,7 @@
     "esi18n": "https://bitbucket.org/metasolutions/esi18n.git#1.1",
     "fuelux": "^3.16.6",
     "handlebars": "^4.1.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery-mousewheel": "^3.1.13",
     "lodash-es": "^4.17.10",
     "moment": "^2.24.0",
