@@ -13,7 +13,7 @@
     "bootstrap-material-datetimepicker": "^2.7.3",
     "bootstrap-material-design": "^4.1.2",
     "express-handlebars": "^3.1.0",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.7.7",
     "moment": "^2.24.0",
     "n3": "^1.1.1",
     "rdfjson": "https://bitbucket.org/metasolutions/rdfjson.git#2.1",
