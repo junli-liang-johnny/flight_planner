@@ -26,7 +26,7 @@
     "lodash-es": "^4.17.10",
     "moment": "^2.24.0",
     "nls-loader": "https://bitbucket.org/metasolutions/nls-loader#master",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^3.1.1",
     "popper.js": "^1.12.9",
     "rdfjson": "https://bitbucket.org/metasolutions/rdfjson.git#2.1",
     "select2": "^4.0.6-rc.1",
