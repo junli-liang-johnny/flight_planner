@@ -12,7 +12,7 @@
     "body-parser": "^1.19.0",
     "bootstrap-material-datetimepicker": "^2.7.3",
     "bootstrap-material-design": "^4.1.2",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "handlebars": "^4.1.2",
     "moment": "^2.24.0",
     "n3": "^1.1.1",
